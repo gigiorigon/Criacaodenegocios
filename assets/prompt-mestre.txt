@@ -1,0 +1,87 @@
+# PAPEL E CONTEXTO
+Você é um especialista sênior e consultor estratégico na área de prospecção de novos negócios, reconhecido por sua visão crítica, pragmatismo e capacidade de traduzir problemas complexos em soluções acionáveis.
+
+Analise cuidadosamente as variáveis fornecidas abaixo antes de formular sua resposta:
+
+<variaveis>
+- Cenário Atual: Um aluno de graduação de administração da UnB, está no último semestre do curso e deseja empreender. Ele precisa de ajuda para prospectar oportunidades de mercado a serem exploradas em Brasília.
+- Setor: Alimentos e bebidas, especificamente o mercado de panificação (padarias)
+- Região: Distrito Federal, nas Regiões Administrativas (RAs) no entorno do Plano Piloto onde o custo de operação seja menor. Indique a RA de cada oportunidade e justifique a escolha com dados.
+- Porte do negócio: Pequeno ou médio porte
+- Capital disponível: Até R$ 500.000,00
+- Horizonte: Abertura entre 2026 e 2030. A operação começa dependente dos donos, mas deve ser desenhada para funcionar sem eles no médio e longo prazo (até 10 anos após a abertura).
+- Definição de oportunidade: Problema concreto de um cliente identificável, que ele pagaria para resolver e que o negócio resolve melhor do que quem já atende esse cliente. Tendência (movimento geral do setor, como "crescimento da panificação artesanal") não é oportunidade; é apenas o lugar onde procurar.
+- Quantidade: Até 3 oportunidades aprovadas, ordenadas da mais à menos defensável. Se menos de 3 passarem nos critérios de corte, entregue menos e diga isso.
+- Objetivo Final: Um resumo executivo para cada oportunidade aprovada, utilizando dados reais e referências reais para embasar cada oportunidade.
+- Público-Alvo: Um aluno da administração da UnB que deseja começar a empreender.
+- Nível de Profundidade: Intermediário. Preciso conseguir tomar a decisão de qual oportunidade focar, para construir o negócio de fato (estruturar plano de negócios e etc)
+- Critérios de corte (checklist final de Dornelas): só entra a oportunidade que responder SIM, com justificativa, às cinco perguntas:
+  (a) Existe um problema a ser resolvido?
+  (b) Existe um produto ou serviço que solucionará esse problema?
+  (c) É possível identificar com clareza os potenciais clientes?
+  (d) É possível implantar uma estratégia de marketing e vendas exequível, em custo e retorno?
+  (e) A janela da oportunidade está aberta?
+  A que falhar em qualquer uma vai para a lista de descartadas.
+- Critérios de potencial (Timmons): avalie necessidade dos clientes, estrutura do mercado, barreiras de entrada e capital inicial apenas de forma qualitativa. NÃO use os patamares numéricos (crescimento de 30% a 50% ao ano, ponto de equilíbrio em menos de 2 anos) como corte: eles foram calibrados para startups de alto crescimento e reprovariam qualquer padaria saudável.
+- Tom e Linguagem: Didático, explicando as fontes e dados que levaram a oportunidade a ser considerada
+- Restrições Absolutas:
+  - Não invente dados. Todo número deve vir com fonte, ano, recorte geográfico (Brasil, DF ou RA) e o que mede (faturamento nominal ou volume; dado observado ou projeção; valor anunciado ou realizado).
+  - Fontes aceitas: primárias ou institucionais, como IBGE, IPEDF/Codeplan (PDAD, dados por RA), SEBRAE, Banco Central, Receita Federal, ABIP, órgãos do GDF e legislação. Notícia só vale se indicar a fonte original.
+  - Sem dado confiável, escreva "SEM DADO". Não estime nem arredonde para preencher o campo.
+  - Proibido justificar potencial por seguidores, curtidas, engajamento ou visibilidade em redes sociais. Potencial só se justifica por receita, margem, ticket médio, frequência de compra ou clientes pagantes.
+  - Não use jargões sem explicar. Proibido emojis.
+</variaveis>
+
+---
+
+# PROCESSO DE PENSAMENTO CRÍTICO
+Antes de gerar a resposta final, faça uma pausa interna e execute os seguintes passos de verificação (você deve incluir essa análise inicial em uma tag <analise_previa>):
+1. O problema central está claramente definido? Se houver ambiguidades ou informações faltando nas variáveis, aponte-as.
+2. Quais são os cenários em que a solução proposta pode falhar ou perder validade?
+3. Separe mentalmente: Fatos comprovados vs. Hipóteses vs. Opiniões. Todo fato precisa cumprir o padrão de evidência das Restrições Absolutas.
+4. Liste as tendências do setor de panificação no DF e só depois derive delas as oportunidades. Nenhuma tendência pode aparecer como oportunidade.
+5. Informe sua data de corte de conhecimento e se consultou a internet para esta resposta.
+
+---
+
+# DIRETRIZES DA TAREFA
+Gere o entregável final garantindo que ele:
+1. Seja estritamente focado no Objetivo Final e 100% acionável.
+2. Evite suposições não verificáveis ou otimismo ingênuo ("achismos").
+3. Indique claramente os riscos, limitações e pontos cegos da abordagem recomendada.
+4. Respeite rigorosamente todas as restrições de tamanho, linguagem e exclusões listadas nas <variaveis>.
+5. Aplique os Critérios de corte a cada candidata antes de incluí-la, e mostre as descartadas.
+
+# FORMATO DA RESPOSTA
+Sua resposta final deve seguir obrigatoriamente esta estrutura de tópicos:
+
+### 1. Tendências do setor
+(Movimentos gerais da panificação no DF que orientaram a busca. Não são oportunidades. Máximo de 5 linhas)
+
+### 2. Oportunidades aprovadas
+(Até 3, da mais à menos defensável. Para cada uma, todos os campos abaixo, nesta ordem)
+
+Oportunidade N — [nome] | RA: [nome da RA]
+- Resumo executivo: máximo de 5 linhas, direto ao ponto
+- Tendência de origem: em uma linha
+- Quem exatamente tem esse problema? Cliente nomeável, não "os moradores" ou "as empresas"
+- Quanto dói? O que o problema custa ao cliente em dinheiro, tempo ou risco
+- Demanda de mercado (1º M): como o cliente é alcançado e em quanto tempo o custo de captação se recupera
+- Tamanho e estrutura do mercado (2º M): tamanho na RA (R$ e nº de clientes), crescimento, concorrentes diretos, mercado fragmentado ou consolidado, barreiras de entrada
+- Por que você, e não o incumbente? Diferenciação que um concorrente estabelecido não copia em três meses
+- Modelo de negócio: quem paga, com que dinheiro, por quê e a que custo (investimento inicial dentro de R$ 500 mil e custos fixos mensais)
+- Canal digital: enquadramento em um dos cinco modelos de negócio na web (intermediação, propaganda, mercado virtual, empresarial, redes sociais), assinatura, ou "não se aplica". Se depender de plataforma de terceiros, informe a comissão e quem fica com o cliente
+- Análise de margem (3º M): margem bruta e ponto de equilíbrio estimados, com premissas explícitas, ou SEM DADO
+- Por que agora, e não em 2020 ou 2035?
+- Caminho para operar sem os donos em até 10 anos
+- Checklist de corte: (a) a (e), cada um com SIM e uma linha de justificativa
+- Evidências: tabela com número | fonte | ano | recorte geográfico | o que mede
+
+### 3. Oportunidades descartadas
+(Uma linha cada: nome e a pergunta do checklist em que falhou)
+
+### 4. Riscos, Limitações e Pontos Cegos
+(O que pode dar errado, quais são as premissas frágeis, o que depende de condição externa como juros e crédito, e quais campos ficaram como SEM DADO)
+
+### 5. Próximos Passos Recomendados
+(Plano de ação claro, em tópicos, ordenado por prioridade, começando pela oportunidade que você priorizaria e por quê)

@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abertura e régua analítica · Panificação no DF</title>
+<meta name="description" content="Estudo de caso de Criação de Negócios (UnB, 2026/2): detecção de oportunidades em panificação no DF com uma cadeia de quatro IAs e a auditoria da síntese.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cellipse cx='16' cy='18' rx='13' ry='9' fill='%23b5651d'/%3E%3Cpath d='M9 14l3 6M15 12l2 7M21 13l2 6' stroke='%23f6e7c8' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body class="main">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="topo-in">
+    <a class="marca" href="index.html">
+      <span class="marca-t">Panificação no DF</span>
+      <span class="marca-s">Oportunidades com uma cadeia de IAs</span>
+    </a>
+    <p class="id-aluno">Giovani Machado Rigon · Mat. 16/0070686 · Criação de Negócios (ADM0150) · 2026/2</p>
+  </div>
+  <details class="menu">
+    <summary>Menu</summary>
+    <nav aria-label="Seções do site"><ul><li><a href="index.html" class="ativo" aria-current="page">Abertura</a></li><li><a href="prompt-mestre.html">Prompt-mestre</a></li><li><a href="protocolo.html">Protocolo</a></li><li class="grupo"><span>Síntese auditada</span><ul><li><a href="auditoria-rastreabilidade.html">Rastreabilidade</a></li><li><a href="auditoria-verificacao.html">Fontes primárias</a></li><li><a href="auditoria-regua.html">Aplicação da régua</a></li></ul></li><li><a href="conclusao.html">Conclusão</a></li><li><a href="anexos.html">Anexos</a></li></ul></nav>
+  </details>
+  <nav class="menu-largo" aria-label="Seções do site"><ul><li><a href="index.html" class="ativo" aria-current="page">Abertura</a></li><li><a href="prompt-mestre.html">Prompt-mestre</a></li><li><a href="protocolo.html">Protocolo</a></li><li class="grupo"><span>Síntese auditada</span><ul><li><a href="auditoria-rastreabilidade.html">Rastreabilidade</a></li><li><a href="auditoria-verificacao.html">Fontes primárias</a></li><li><a href="auditoria-regua.html">Aplicação da régua</a></li></ul></li><li><a href="conclusao.html">Conclusão</a></li><li><a href="anexos.html">Anexos</a></li></ul></nav>
+</header>
+<main id="conteudo">
+<article class="conteudo">
+<h1>Abertura e régua analítica</h1>
+<div class="ident">
+<p>
+<span>Aluno</span><strong>Giovani Machado Rigon</strong>
+</p>
+<p>
+<span>Matrícula</span><strong>16/0070686</strong>
+</p>
+<p>
+<span>Disciplina</span><strong>Criação de Negócios (ADM0150)</strong>
+</p>
+<p>
+<span>Semestre</span><strong>2026/2</strong>
+</p>
+</div>
+<p>Universidade de Brasília · Faculdade de Economia, Administração, Contabilidade e Gestão de Políticas Públicas · Departamento de Administração · Atividade 2, estudo de caso individual.</p>
+<h2 id="objetivo-do-estudo">Objetivo do estudo</h2>
+<p>Este estudo testa um método de detecção de oportunidades de negócio em que quatro inteligências artificiais trabalham em cadeia, e examina onde essa cadeia falha.</p>
+<p>O recorte é o mercado de <strong>panificação (padarias) no Distrito Federal</strong>, em regiões administrativas no entorno do Plano Piloto com custo de operação menor, para um negócio de pequeno ou médio porte, com capital de até <strong>R$ 500 mil</strong> e abertura entre <strong>2026 e 2030</strong>.</p>
+<p>O caminho seguido tem quatro passos:</p>
+<ol type="1">
+<li><strong>Prompt-mestre.</strong> Escrevi um único prompt que carrega os instrumentos de avaliação de oportunidade das Aulas 4, 5 e 6 (<a href="prompt-mestre.html">página 2</a>).</li>
+<li><strong>Três IAs.</strong> Enviei o mesmo prompt, sem adaptação, ao Gemini, ao DeepSeek e ao ChatGPT (<a href="protocolo.html">página 3</a>).</li>
+<li><strong>Quarta IA.</strong> Submeti as três respostas a uma quarta IA, encarregada apenas de sintetizá-las, com um prompt de síntese próprio (<a href="protocolo.html#prompt-de-síntese">página 3</a>).</li>
+<li><strong>Auditoria.</strong> Tratei a síntese como objeto de investigação: rastreei suas afirmações até as respostas originais, confrontei dados com fontes primárias e apliquei a régua por conta própria (<a href="auditoria-rastreabilidade.html">páginas 4.1 a 4.3</a>).</li>
+</ol>
+<h2 id="resultado-em-uma-frase">Resultado em uma frase</h2>
+<div class="caixa destaque">
+<p>A síntese manteve os números, mas perdeu as dúvidas: das 16 afirmações auditadas, 4 foram distorcidas em certeza ou sentido, 2 são órfãs e 3 ressalvas das próprias IAs sumiram. Na fonte primária, só 1 de 7 afirmações se confirmou por inteiro, e os dados por RA das três IAs têm edição, ano ou RA trocados. Pela régua das Aulas 5 e 6, nenhuma oportunidade passa nas cinco perguntas hoje; a única que eu defenderia é a panificação sem glúten dedicada, vendida primeiro a cafeterias e restaurantes.</p>
+</div>
+<h2 id="a-régua-analítica">A régua analítica</h2>
+<p>Antes de escrever o prompt, selecionei os instrumentos das Aulas 4, 5 e 6 que ele deveria carregar. Usei os nove instrumentos disponíveis; de um deles, os critérios de alto e baixo potencial, aproveitei só uma parte.</p>
+<div class="tabela media">
+<div class="tabela"><table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 32%" />
+<col style="width: 12%" />
+<col style="width: 40%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aula</th>
+<th>Instrumento</th>
+<th>Uso</th>
+<th>Por que entrou</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>4</td>
+<td>Tendência × oportunidade</td>
+<td><span class="selo ok">Usado</span></td>
+<td>Em ramo tradicional e concorrido, sem essa distinção as três IAs devolveriam a mesma resposta genérica (“abra uma padaria artesanal”); exigir cliente nomeável força o específico.</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Cinco perguntas de triagem</td>
+<td><span class="selo ok">Usado</span></td>
+<td>O maior risco em ramo tradicional é entrar num mercado saturado sem diferencial, e a quarta pergunta ataca isso; respondidas uma a uma, impedem que a oportunidade seja só descrita.</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>Leitura crítica de dado de mercado</td>
+<td><span class="selo ok">Usado</span></td>
+<td>Torna verificáveis os dados que o prompt exige e previne dois erros prováveis: dado nacional usado como se valesse para a RA e faturamento nominal lido como volume.</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>Checklist final (Dornelas)</td>
+<td><span class="selo ok">Filtro de corte</span></td>
+<td>Por ser binário, funciona como corte e deixa as três respostas comparáveis; é também o teste que aplico às finalistas na análise própria.</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>3Ms</td>
+<td><span class="selo ok">Usado</span></td>
+<td>Com capital de R$ 500 mil, margem e tempo até o equilíbrio decidem se a padaria se sustenta; o 2º M obriga a olhar a concorrência da RA, e não do país.</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>Critérios de alto e baixo potencial (Timmons)</td>
+<td><span class="selo warn">Em parte</span></td>
+<td>Os critérios de lógica valem para qualquer negócio; os patamares numéricos vêm do capital de risco e reprovariam qualquer padaria saudável.</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td>Modelo de negócio</td>
+<td><span class="selo ok">Usado</span></td>
+<td>Em padaria, quem paga muda conforme a oportunidade (balcão, café ou hotel, órgão público), e cada caso tem custo, ticket e prazo de recebimento diferentes.</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Cinco modelos de negócio na web</td>
+<td><span class="selo ok">Usado, em um campo</span></td>
+<td>O canal digital da padaria costuma ser do modelo empresarial; vender em plataforma alheia custa comissão e o cliente fica com ela. Incluí a assinatura.</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td>Métrica de atenção × métrica de negócio</td>
+<td><span class="selo ok">Usado</span></td>
+<td>Em alimentação é comum justificar potencial pelo Instagram; o prompt só aceita receita, margem, ticket médio, frequência de compra ou clientes pagantes.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<h3 id="o-que-ficou-de-fora">O que ficou de fora</h3>
+<p>Só um elemento ficou de fora: <strong>os patamares numéricos dos critérios de alto e baixo potencial</strong> (crescimento de 30% a 50% ao ano e ponto de equilíbrio em menos de dois anos). Eles vêm do capital de risco e foram pensados para startups de crescimento acelerado. Panificação é um mercado maduro, que cresce bem abaixo disso; aplicados aqui, reprovariam qualquer padaria, inclusive uma perfeitamente saudável. O prompt proíbe expressamente seu uso como corte.</p>
+<h3 id="justificativa-completa-de-cada-instrumento">Justificativa completa de cada instrumento</h3>
+<p>Clique em cada instrumento para ver o que ele é, por que o usei e em que trecho do prompt ele entra. A correspondência com o texto do prompt está, bloco a bloco, na <a href="prompt-mestre.html">página do prompt-mestre</a>.</p>
+<h4 id="aula-4-oportunidades-no-mercado-brasileiro">Aula 4 · Oportunidades no mercado brasileiro</h4>
+<details class="instr" id="tendencia">
+<summary>
+Tendência × oportunidade <small>usado</small>
+</summary>
+<div>
+<p><strong>O que é.</strong> Tendência é uma direção geral do mercado, conhecida por todos e sem dono, como “cresce o consumo de pão artesanal”. Oportunidade é um problema concreto de um cliente identificável, que ele pagaria para resolver e que o negócio resolve melhor do que quem já o atende.</p>
+<p><strong>Por que usei.</strong> Padaria é um ramo tradicional, com demanda conhecida e muita concorrência. Sem essa distinção, a tendência acaba apresentada como se fosse oportunidade, e as três IAs devolveriam a mesma resposta genérica: “abra uma padaria artesanal”. Exigir um cliente nomeável força cada resposta a sair do geral para o específico.</p>
+<p><strong>Onde entra.</strong> Na variável “Definição de oportunidade”, no passo 4 do processo de pensamento crítico e na seção 1 do formato, que separa as tendências das oportunidades.</p>
+</div>
+</details>
+<details class="instr" id="cinco-perguntas">
+<summary>
+Cinco perguntas de triagem <small>usado</small>
+</summary>
+<div>
+<p><strong>O que é.</strong> Cinco perguntas para testar qualquer ideia:</p>
+<ol type="1">
+<li>Quem exatamente tem o problema?</li>
+<li>Quanto ele dói?</li>
+<li>Quem paga, e com que dinheiro?</li>
+<li>Por que você, e não o concorrente já estabelecido?</li>
+<li>Por que agora?</li>
+</ol>
+<p><strong>Por que usei.</strong> Em ramo tradicional, o maior risco é entrar num mercado saturado sem nada que diferencie o negócio, e a quarta pergunta ataca isso diretamente. Respondidas uma a uma, as perguntas também impedem que a oportunidade seja apenas descrita.</p>
+<p><strong>Onde entra.</strong> Cada pergunta virou um campo fixo de cada oportunidade, com a mesma redação.</p>
+</div>
+</details>
+<details class="instr" id="leitura-critica">
+<summary>
+Leitura crítica de dado de mercado <small>usado</small>
+</summary>
+<div>
+<p><strong>O que é.</strong> O hábito de perguntar, diante de qualquer número, de onde ele veio, de quando é e o que exatamente mede.</p>
+<p><strong>Por que usei.</strong> O prompt pede dados reais, e esse critério os torna verificáveis. Neste recorte há dois erros prováveis:</p>
+<ul>
+<li>usar um dado nacional da panificação como se valesse para uma região administrativa específica do DF;</li>
+<li>ler crescimento de faturamento em reais como crescimento de vendas, sem descontar a inflação.</li>
+</ul>
+<p>Incluí também uma saída para quando não houver dado confiável: a IA deve escrever “SEM DADO” em vez de estimar.</p>
+<p><strong>Onde entra.</strong> Nas Restrições Absolutas e no campo Evidências, cuja tabela exige fonte, ano, recorte geográfico e o que o número mede.</p>
+</div>
+</details>
+<h4 id="aula-5-identificando-oportunidades-dornelas-cap.-3">Aula 5 · Identificando oportunidades (Dornelas, cap. 3)</h4>
+<details class="instr" id="checklist">
+<summary>
+Checklist final <small>usado como filtro de corte</small>
+</summary>
+<div>
+<p><strong>O que é.</strong> Cinco perguntas de sim ou não:</p>
+<ol type="1">
+<li>Existe um problema a resolver?</li>
+<li>Existe produto ou serviço que o resolva?</li>
+<li>Os clientes são identificáveis com clareza?</li>
+<li>Há estratégia de vendas viável em custo e retorno?</li>
+<li>A janela da oportunidade está aberta?</li>
+</ol>
+<p><strong>Por que usei.</strong> É o critério de corte do prompt. A oportunidade que falha em qualquer pergunta não entra. Por ser binário, deixa as três respostas comparáveis. É também o teste que aplico, por conta própria, às oportunidades finalistas na análise deste trabalho. A lista de descartadas permite ver o filtro funcionando.</p>
+<p><strong>Onde entra.</strong> Na variável “Critérios de corte”, no item 5 das diretrizes e nas seções 2 e 3 do formato.</p>
+</div>
+</details>
+<details class="instr" id="3ms">
+<summary>
+3Ms <small>usado</small>
+</summary>
+<div>
+<p><strong>O que é.</strong> Roteiro de análise em três etapas:</p>
+<ol type="1">
+<li>Demanda de mercado: quem é o cliente e como alcançá-lo.</li>
+<li>Tamanho e estrutura do mercado: tamanho, crescimento, concorrentes e barreiras de entrada.</li>
+<li>Análise de margem: quanto sobra de cada venda e quando o negócio se paga.</li>
+</ol>
+<p><strong>Por que usei.</strong> Com capital limitado a R$ 500 mil para ponto comercial, reforma e equipamentos, a margem e o tempo até o ponto de equilíbrio decidem se a padaria se sustenta. A etapa de tamanho e estrutura obriga a olhar a concorrência na região escolhida, e não no país.</p>
+<p><strong>Onde entra.</strong> Em três campos de cada oportunidade, identificados como 1º, 2º e 3º M.</p>
+</div>
+</details>
+<details class="instr" id="timmons">
+<summary>
+Critérios de alto e baixo potencial <small>usado em parte</small>
+</summary>
+<div>
+<p><strong>O que é.</strong> Tabela adaptada de Jeffry Timmons que separa oportunidades de alto e baixo potencial. Combina dois tipos de critério:</p>
+<ul>
+<li>De lógica: cliente identificado, concorrência ainda não consolidada, barreiras de entrada e capital necessário.</li>
+<li>Patamares numéricos: crescimento de 30% a 50% ao ano e ponto de equilíbrio em menos de dois anos.</li>
+</ul>
+<p><strong>Por que usei só uma parte.</strong> Os patamares numéricos vêm do capital de risco e foram pensados para startups de crescimento acelerado. Panificação é um mercado maduro, que cresce bem abaixo disso. Aplicados aqui, reprovariam qualquer padaria, inclusive uma perfeitamente saudável. Mantive os critérios de lógica, que valem para qualquer negócio. Os patamares numéricos são o único elemento que deixei de fora, e o prompt proíbe expressamente seu uso como corte.</p>
+<p><strong>Onde entra.</strong> Na variável “Critérios de potencial”.</p>
+</div>
+</details>
+<h4 id="aula-6-oportunidades-na-internet-dornelas-cap.-4">Aula 6 · Oportunidades na internet (Dornelas, cap. 4)</h4>
+<details class="instr" id="modelo-negocio">
+<summary>
+Modelo de negócio <small>usado</small>
+</summary>
+<div>
+<p><strong>O que é.</strong> A descrição de como a empresa gera receita e de quais custos e investimentos isso exige.</p>
+<p><strong>Por que usei.</strong> Em padaria, quem paga muda conforme a oportunidade. Pode ser o consumidor no balcão, um café ou hotel que compra para revender (venda entre empresas, ou B2B) ou um órgão público por contrato. Cada caso tem custo, ticket e prazo de recebimento diferentes. Exigir quem paga, por quê e a que custo impede que a oportunidade fique só na ideia.</p>
+<p><strong>Onde entra.</strong> Campo próprio em cada oportunidade.</p>
+</div>
+</details>
+<details class="instr" id="modelos-web">
+<summary>
+Cinco modelos de negócio na web <small>usado, em um único campo</small>
+</summary>
+<div>
+<p><strong>O que é.</strong> Classificação das formas de ganhar dinheiro na internet: intermediação, propaganda, mercado virtual, empresarial e redes sociais. No modelo empresarial, um negócio do mundo físico usa a internet para vender mais ou gastar menos, como o restaurante que entra num aplicativo de entrega ou a pequena empresa que vende pelo WhatsApp.</p>
+<p><strong>Por que usei.</strong> Padaria é negócio físico, mas quase sempre tem canal digital, e esse canal costuma ser do modelo empresarial. Vender dentro da plataforma de outra empresa tem dois custos: a comissão sobre cada pedido e o fato de o cliente pertencer à plataforma, não à loja. Por isso o campo pede a comissão e quem fica com o cliente. Incluí também a assinatura como opção, por exemplo entrega recorrente de pão ou café da manhã, por ser um modelo que a classificação original não previa.</p>
+<p><strong>Onde entra.</strong> No campo “Canal digital”, que aceita “não se aplica” quando não houver componente digital.</p>
+</div>
+</details>
+<details class="instr" id="metrica">
+<summary>
+Métrica de atenção × métrica de negócio <small>usado</small>
+</summary>
+<div>
+<p><strong>O que é.</strong> A diferença entre medir atenção (visitas, seguidores, curtidas) e medir negócio (receita, custo, lucro). A atenção só importa quando se converte em receita.</p>
+<p><strong>Por que usei.</strong> Em alimentação é comum justificar o potencial de um negócio pelo sucesso no Instagram. O prompt proíbe esse argumento e só aceita receita, margem, ticket médio, frequência de compra ou clientes pagantes. Se alguma IA usar o argumento mesmo assim, isso será registrado como achado na auditoria.</p>
+<p><strong>Onde entra.</strong> Em uma linha das Restrições Absolutas.</p>
+</div>
+</details>
+<h2 id="como-navegar">Como navegar</h2>
+<ul>
+<li><strong><a href="prompt-mestre.html">2. Prompt-mestre</a>:</strong> o prompt na íntegra, com a justificativa ao lado de cada bloco.</li>
+<li><strong><a href="protocolo.html">3. Protocolo de teste</a>:</strong> ferramentas, versões, datas, condições de uso e o prompt de síntese.</li>
+<li><strong>4. Síntese auditada:</strong> <a href="auditoria-rastreabilidade.html">4.1 Rastreabilidade</a> · <a href="auditoria-verificacao.html">4.2 Verificação em fonte primária</a> · <a href="auditoria-regua.html">4.3 Aplicação da régua</a>.</li>
+<li><strong><a href="conclusao.html">5. Conclusão</a>:</strong> a oportunidade que defendo e o que aprendi sobre encadear IAs.</li>
+<li><strong><a href="anexos.html">Anexos</a>:</strong> as quatro respostas completas, sem edição, também em PDF.</li>
+</ul>
+
+</article>
+<nav class="pager" aria-label="Paginação"><span></span><a class="prox" href="prompt-mestre.html"><small>Próxima</small>O prompt-mestre</a></nav>
+</main>
+<footer class="rodape">
+  <p>Giovani Machado Rigon · Matrícula 16/0070686 · Criação de Negócios (ADM0150) · Semestre 2026/2 · Universidade de Brasília</p>
+  <p>As respostas das IAs aparecem apenas nos anexos, como objeto de estudo. Resposta de IA não é fonte.</p>
+</footer>
+</body>
+</html>

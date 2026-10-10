@@ -1,0 +1,516 @@
+# PAPEL
+Você é um sintetizador. Sua única tarefa é consolidar três respostas de IAs diferentes ao mesmo prompt em um único panorama. Você não é analista nem consultor: não avalia, não recomenda, não completa e não corrige o conteúdo recebido.
+
+# MATERIAL
+O prompt-mestre abaixo foi enviado, sem alteração, a três IAs. Ele serve apenas para você entender a estrutura das respostas. Não responda a ele.
+
+<prompt_mestre>
+# PAPEL E CONTEXTO
+Você é um especialista sênior e consultor estratégico na área de prospecção de novos negócios, reconhecido por sua visão crítica, pragmatismo e capacidade de traduzir problemas complexos em soluções acionáveis.
+
+Analise cuidadosamente as variáveis fornecidas abaixo antes de formular sua resposta:
+
+<variaveis>
+- Cenário Atual: Um aluno de graduação de administração da UnB, está no último semestre do curso e deseja empreender. Ele precisa de ajuda para prospectar oportunidades de mercado a serem exploradas em Brasília.
+- Setor: Alimentos e bebidas, especificamente o mercado de panificação (padarias)
+- Região: Distrito Federal, nas Regiões Administrativas (RAs) no entorno do Plano Piloto onde o custo de operação seja menor. Indique a RA de cada oportunidade e justifique a escolha com dados.
+- Porte do negócio: Pequeno ou médio porte
+- Capital disponível: Até R$ 500.000,00
+- Horizonte: Abertura entre 2026 e 2030. A operação começa dependente dos donos, mas deve ser desenhada para funcionar sem eles no médio e longo prazo (até 10 anos após a abertura).
+- Definição de oportunidade: Problema concreto de um cliente identificável, que ele pagaria para resolver e que o negócio resolve melhor do que quem já atende esse cliente. Tendência (movimento geral do setor, como "crescimento da panificação artesanal") não é oportunidade; é apenas o lugar onde procurar.
+- Quantidade: Até 3 oportunidades aprovadas, ordenadas da mais à menos defensável. Se menos de 3 passarem nos critérios de corte, entregue menos e diga isso.
+- Objetivo Final: Um resumo executivo para cada oportunidade aprovada, utilizando dados reais e referências reais para embasar cada oportunidade.
+- Público-Alvo: Um aluno da administração da UnB que deseja começar a empreender.
+- Nível de Profundidade: Intermediário. Preciso conseguir tomar a decisão de qual oportunidade focar, para construir o negócio de fato (estruturar plano de negócios e etc)
+- Critérios de corte (checklist final de Dornelas): só entra a oportunidade que responder SIM, com justificativa, às cinco perguntas:
+  (a) Existe um problema a ser resolvido?
+  (b) Existe um produto ou serviço que solucionará esse problema?
+  (c) É possível identificar com clareza os potenciais clientes?
+  (d) É possível implantar uma estratégia de marketing e vendas exequível, em custo e retorno?
+  (e) A janela da oportunidade está aberta?
+  A que falhar em qualquer uma vai para a lista de descartadas.
+- Critérios de potencial (Timmons): avalie necessidade dos clientes, estrutura do mercado, barreiras de entrada e capital inicial apenas de forma qualitativa. NÃO use os patamares numéricos (crescimento de 30% a 50% ao ano, ponto de equilíbrio em menos de 2 anos) como corte: eles foram calibrados para startups de alto crescimento e reprovariam qualquer padaria saudável.
+- Tom e Linguagem: Didático, explicando as fontes e dados que levaram a oportunidade a ser considerada
+- Restrições Absolutas:
+  - Não invente dados. Todo número deve vir com fonte, ano, recorte geográfico (Brasil, DF ou RA) e o que mede (faturamento nominal ou volume; dado observado ou projeção; valor anunciado ou realizado).
+  - Fontes aceitas: primárias ou institucionais, como IBGE, IPEDF/Codeplan (PDAD, dados por RA), SEBRAE, Banco Central, Receita Federal, ABIP, órgãos do GDF e legislação. Notícia só vale se indicar a fonte original.
+  - Sem dado confiável, escreva "SEM DADO". Não estime nem arredonde para preencher o campo.
+  - Proibido justificar potencial por seguidores, curtidas, engajamento ou visibilidade em redes sociais. Potencial só se justifica por receita, margem, ticket médio, frequência de compra ou clientes pagantes.
+  - Não use jargões sem explicar. Proibido emojis.
+</variaveis>
+
+---
+
+# PROCESSO DE PENSAMENTO CRÍTICO
+Antes de gerar a resposta final, faça uma pausa interna e execute os seguintes passos de verificação (você deve incluir essa análise inicial em uma tag <analise_previa>):
+1. O problema central está claramente definido? Se houver ambiguidades ou informações faltando nas variáveis, aponte-as.
+2. Quais são os cenários em que a solução proposta pode falhar ou perder validade?
+3. Separe mentalmente: Fatos comprovados vs. Hipóteses vs. Opiniões. Todo fato precisa cumprir o padrão de evidência das Restrições Absolutas.
+4. Liste as tendências do setor de panificação no DF e só depois derive delas as oportunidades. Nenhuma tendência pode aparecer como oportunidade.
+5. Informe sua data de corte de conhecimento e se consultou a internet para esta resposta.
+
+---
+
+# DIRETRIZES DA TAREFA
+Gere o entregável final garantindo que ele:
+1. Seja estritamente focado no Objetivo Final e 100% acionável.
+2. Evite suposições não verificáveis ou otimismo ingênuo ("achismos").
+3. Indique claramente os riscos, limitações e pontos cegos da abordagem recomendada.
+4. Respeite rigorosamente todas as restrições de tamanho, linguagem e exclusões listadas nas <variaveis>.
+5. Aplique os Critérios de corte a cada candidata antes de incluí-la, e mostre as descartadas.
+
+# FORMATO DA RESPOSTA
+Sua resposta final deve seguir obrigatoriamente esta estrutura de tópicos:
+
+### 1. Tendências do setor
+(Movimentos gerais da panificação no DF que orientaram a busca. Não são oportunidades. Máximo de 5 linhas)
+
+### 2. Oportunidades aprovadas
+(Até 3, da mais à menos defensável. Para cada uma, todos os campos abaixo, nesta ordem)
+
+Oportunidade N — [nome] | RA: [nome da RA]
+- Resumo executivo: máximo de 5 linhas, direto ao ponto
+- Tendência de origem: em uma linha
+- Quem exatamente tem esse problema? Cliente nomeável, não "os moradores" ou "as empresas"
+- Quanto dói? O que o problema custa ao cliente em dinheiro, tempo ou risco
+- Demanda de mercado (1º M): como o cliente é alcançado e em quanto tempo o custo de captação se recupera
+- Tamanho e estrutura do mercado (2º M): tamanho na RA (R$ e nº de clientes), crescimento, concorrentes diretos, mercado fragmentado ou consolidado, barreiras de entrada
+- Por que você, e não o incumbente? Diferenciação que um concorrente estabelecido não copia em três meses
+- Modelo de negócio: quem paga, com que dinheiro, por quê e a que custo (investimento inicial dentro de R$ 500 mil e custos fixos mensais)
+- Canal digital: enquadramento em um dos cinco modelos de negócio na web (intermediação, propaganda, mercado virtual, empresarial, redes sociais), assinatura, ou "não se aplica". Se depender de plataforma de terceiros, informe a comissão e quem fica com o cliente
+- Análise de margem (3º M): margem bruta e ponto de equilíbrio estimados, com premissas explícitas, ou SEM DADO
+- Por que agora, e não em 2020 ou 2035?
+- Caminho para operar sem os donos em até 10 anos
+- Checklist de corte: (a) a (e), cada um com SIM e uma linha de justificativa
+- Evidências: tabela com número | fonte | ano | recorte geográfico | o que mede
+
+### 3. Oportunidades descartadas
+(Uma linha cada: nome e a pergunta do checklist em que falhou)
+
+### 4. Riscos, Limitações e Pontos Cegos
+(O que pode dar errado, quais são as premissas frágeis, o que depende de condição externa como juros e crédito, e quais campos ficaram como SEM DADO)
+
+### 5. Próximos Passos Recomendados
+(Plano de ação claro, em tópicos, ordenado por prioridade, começando pela oportunidade que você priorizaria e por quê)
+</prompt_mestre>
+
+<resposta_GEMINI>
+<analise_previa>
+• O problema central: Mapear oportunidades de negócio (padarias) para um universitário no DF com capital limitado (R$ 500 mil) e objetivo de autonomia operacional em 10 anos, focando em RAs de menor custo. Faltam dados sobre a capacitação técnica do aluno (ele sabe fazer pão ou vai depender de terceiros?), o que eleva substancialmente o risco operacional na largada.
+• Cenários de falha: (i) O capital de R$ 500 mil é devorado por equipamentos importados (fornos combinados/lastro) e obras estruturais antes da inauguração; (ii) Choque de câmbio no preço do trigo; (iii) Alta rotatividade de mão de obra especializada (padeiros), inviabilizando a operação sem os donos.
+• Fatos vs Hipóteses: É fato que aluguéis no Plano Piloto e Águas Claras são restritivos para esse orçamento (PDAD). É hipótese que os donos de cafeterias terceirizam por vontade e não por contingência.
+• Tendências (não oportunidades): Foco em fermentação natural, avanço do grab-and-go (pegue e leve) e crescimento da panificação para dietas restritivas.
+• Corte de conhecimento e restrição: Não foi realizada busca ao vivo na internet para esta resposta; os dados utilizados baseiam-se nos relatórios históricos do IBGE, IPEDF (antiga Codeplan) e associações setoriais (ABIP) consolidados até o momento. </analise_previa>
+1. Tendências do setor
+No Distrito Federal, observamos três movimentos claros: a terceirização da produção por cafés independentes que ocupam lojas cada vez menores; o crescimento rígido da panificação voltada para dietas restritivas (zero glúten/lactose) devido a normas mais duras da Anvisa; e a adoção do autoatendimento (grab-and-go) como resposta aos custos trabalhistas que esmagam as margens do varejo tradicional.
+2. Oportunidades aprovadas
+Oportunidade 1 — Central de Produção B2B (Dark Bakery) | RA: Guará (SOF Sul ou Guará II)
+• Resumo executivo: Operação de cozinha fechada focada exclusivamente em produzir e entregar pães de fermentação natural e viennoiserie fresca todos os dias pela manhã para cafeterias independentes do Plano Piloto, Sudoeste e Águas Claras.
+• Tendência de origem: Terceirização da produção comercial por falta de espaço físico e aluguéis caros.
+• Quem exatamente tem esse problema? Donos de pequenas cafeterias de especialidade (lojas de 30 a 50m²) que não possuem espaço, alvará ou caixa para montar uma cozinha pesada de panificação.
+• Quanto dói? Eles perdem margem vendendo pães genéricos que rebaixam a experiência do café, ou destroem a lucratividade comprando pães no varejo de padarias famosas para revender. Além disso, sofrem com atrasos logísticos que os deixam sem produto na hora de pico (8h da manhã).
+• Demanda de mercado (1º M): Captação ativa presencial (porta a porta com amostras). O custo de aquisição (amostragem + tempo do vendedor) se paga já nas duas primeiras semanas de contrato, devido à alta recorrência (pedidos diários).
+• Tamanho e estrutura do mercado (2º M): Mercado altamente fragmentado no DF. A principal barreira de entrada não é o produto, mas a engenharia logística matinal. Tamanho exato em faturamento B2B na RA: SEM DADO.
+• Por que você, e não o incumbente? Padarias tradicionais encaram o fornecimento B2B como "sobra" do varejo. Elas operam para a própria vitrine e frequentemente falham na pontualidade da entrega. Uma operação 100% B2B nasce desenhada para excelência logística e constrói barreiras de saída pelo nível de serviço.
+• Modelo de negócio: Contratos B2B com faturamento semanal ou quinzenal. O capital de R$ 500 mil é alocado em fornos nacionais robustos (ex: Ramalhos) e utilitários leves para logística, em um galpão de baixo custo no Guará, região estrategicamente posicionada entre os grandes polos consumidores.
+• Canal digital: Empresarial. Uso de sistemas de portal B2B para lojistas lançarem seus pedidos até as 18h do dia anterior.
+• Análise de margem (3º M): Margem bruta estimada em 45% a 55%. O B2B comprime a margem em relação ao consumidor final, mas derruba radicalmente o custo fixo (sem garçons, sem vitrine, sem loja de rua). Ponto de equilíbrio: SEM DADO.
+• Por que agora, e não em 2020 ou 2035? O boom de cafeterias pós-pandemia saturou o DF, mas essas empresas hoje ocupam as chamadas "lojas tubo" (minúsculas) por causa da inflação imobiliária, inviabilizando qualquer produção in loco.
+• Caminho para operar sem os donos em até 10 anos: Padronização absoluta de receitas (POPs rígidos), contratação de um gerente de produção e roteirização automatizada de entregas. O modelo B2B sem loja física exige menos "presença do dono" lidando com o público e mais engenharia de processos.
+• Checklist de corte:
+• (a) SIM. Falta de espaço físico para produção nas cafeterias é um limite real e imutável.
+• (b) SIM. Produção centralizada de alta qualidade entregue na porta antes da abertura do cliente.
+• (c) SIM. O público (cafeterias) é facilmente mapeável via Google e Instagram.
+• (d) SIM. Abordagem comercial direta (amostragem presencial) é barata e tem conversão previsível.
+• (e) SIM. O m² comercial está nos maiores patamares históricos, forçando lojistas a encolherem suas plantas.
+• Evidências: | Número / Dado | Fonte | Ano | Recorte Geográfico | O que mede | | :--- | :--- | :--- | :--- | :--- | | Perfil Domiciliar e Renda | IPEDF (PDAD) | 2021 | RA Guará | Comprova vocação logística/comercial e custo imobiliário mais viável que o Plano Piloto | | Faturamento do Setor | ABIP | 2023 | Brasil | Faturamento nominal (indicou crescimento setorial superior a 10% no ano, demonstrando resiliência) |
+Oportunidade 2 — Laboratório de Panificação Inclusiva (Zero Glúten/Contaminação) | RA: Vicente Pires
+• Resumo executivo: Indústria de pequeno porte focada estritamente em panificação para celíacos e alérgicos, garantindo ausência de contaminação cruzada, com vendas focadas em assinaturas e delivery direto.
+• Tendência de origem: Avanço no diagnóstico clínico de intolerâncias e alergias alimentares.
+• Quem exatamente tem esse problema? Pacientes laudados com doença celíaca ou APLV (Alergia à Proteína do Leite de Vaca) residentes no eixo Águas Claras / Plano Piloto, cujas famílias vivem em estresse alimentar diário.
+• Quanto dói? O risco de hospitalização e choque anafilático. O cliente gasta muito tempo cozinhando alternativas ruins ou paga fortunas por produtos industrializados secos que destroem o prazer da refeição.
+• Demanda de mercado (1º M): Captação ocorre no consultório. O custo de aquisição é focado em envio de kits de degustação para gastropediatras e nutricionistas, que fazem o marketing boca a boca com autoridade inquestionável.
+• Tamanho e estrutura do mercado (2º M): O público celíaco representa uma pequena fatia demográfica, mas possui uma demanda reprimida violenta e altíssima fidelidade. Mercado semiconsolidado por marcas industriais nacionais, mas carente de produto fresco local. Tamanho em R$ da RA: SEM DADO.
+• Por que você, e não o incumbente? Uma padaria tradicional de bairro não pode simplesmente começar a vender pão sem glúten para celíacos. O pó de trigo no ar contamina toda a produção (contaminação cruzada). Apenas uma instalação que nasce 100% estéril consegue atender essa demanda médica, criando um fosso contra a concorrência.
+• Modelo de negócio: Assinatura semanal de cestas (pães, bolos, lanches) enviadas para a casa do cliente. O capital foca na certificação sanitária, maquinário isolado e insumos substitutos de alto padrão.
+• Canal digital: Mercado virtual próprio e Assinatura. Independência das grandes plataformas de delivery para fugir de taxas de 27% e garantir o controle dos dados do cliente.
+• Análise de margem (3º M): Margem bruta projetada de 55% a 65%. Insumos (farinha de amêndoas, féculas) são caríssimos, mas o ticket médio acompanha a dor do cliente, aceitando o prêmio pelo risco zero. Ponto de equilíbrio: SEM DADO.
+• Por que agora, e não em 2020 ou 2035? A Anvisa endureceu as regras de rotulagem (RDC 727/2022 e anteriores) sobre alérgenos, forçando grandes indústrias a admitirem traços de contaminação, o que empurrou os pacientes severos para buscar produções controladas artesanais.
+• Caminho para operar sem os donos em até 10 anos: A produção por encomenda/assinatura (D+1 ou D+2) remove o caos do varejo (fornadas a cada 30 minutos). Essa previsibilidade industrial permite criar escalas de trabalho mais fixas e delegáveis para a equipe.
+• Checklist de corte:
+• (a) SIM. Dor latente atrelada à saúde e integridade física.
+• (b) SIM. Produtos de panificação técnica com farinhas alternativas.
+• (c) SIM. Pacientes de clínicas de gastroenterologia e redes de apoio locais.
+• (d) SIM. Propagadores (médicos) validam o produto, reduzindo a necessidade de marketing pulverizado.
+• (e) SIM. Concorrência hiper-segmentada ainda é pífia fora do Plano Piloto.
+• Evidências: | Número / Dado | Fonte | Ano | Recorte Geográfico | O que mede | | :--- | :--- | :--- | :--- | :--- | | Incidência de Celíacos | FENACELBRA | 2021 | Brasil | Estima de 1% a 2% da população (dado projetado de prevalência da condição) | | Crescimento Demográfico | IPEDF (PDAD) | 2021 | RA Vicente Pires | Crescimento populacional e adensamento que viabiliza a logística de distribuição para Águas Claras/Plano |
+3. Oportunidades descartadas
+• Padaria Tradicional "Completar" (com salão e balcão) em Águas Claras: Falhou em (e) janela da oportunidade. O orçamento de R$ 500 mil é insuficiente para suportar o capital de giro, ponto comercial (luvas) e reformas exigidas na região frente a tubarões já consolidados.
+• Foodtruck de Panificação Artesanal: Falhou em (d) estratégia exequível. O custo oculto de licenciamento itinerante no DF (que é extremamente restrito em áreas de alta renda como o Plano Piloto) e a depreciação do veículo matam o retorno do investimento.
+4. Riscos, Limitações e Pontos Cegos
+• Vulnerabilidade Cambial (A grande fragilidade): O setor de panificação é refém do preço do trigo, que é uma commodity atrelada ao dólar. Margens planejadas milimetricamente podem derreter em trinta dias se houver um choque cambial no mercado internacional ou quebra de safra na Argentina.
+• Gargalo de Talento Operacional: Modelos que pretendem operar "sem o dono" em 10 anos esbarram no apagão de mão de obra técnica no Brasil. Encontrar e reter padeiros especialistas em fermentação natural ou panificação sem glúten exige pagar salários quase executivos.
+• Pontos Cegos e SEM DADOS: Não existe microdado público confiável (IBGE/Receita) sobre faturamento exato de pequenos negócios segmentados por bairro/RA. Toda projeção de faturamento baseada em dados demográficos amplos corre o risco do "achismo" de conversão.
+• O Mito da Escala Rápida: Com R$ 500 mil, um erro crasso no dimensionamento da câmara fria ou na compra de um forno superdimensionado compromete o fluxo de caixa do primeiro ano inteiro. A margem de erro é zero.
+5. Próximos Passos Recomendados
+• Validação da Dor B2B (Foco na Oportunidade 1): Esta semana, visite 10 a 15 cafeterias independentes na Asa Norte ou Águas Claras. Como administrador, sua missão não é vender, mas perguntar: "Qual a taxa de desperdício do seu pão hoje?" e "Seu fornecedor atual atrasa quantas vezes no mês?". Se a resposta não apontar insatisfação, a premissa cai por terra.
+• Engenharia de Cardápio Inicial: Defina um portfólio restrito (ex: 3 tipos de pão de campanha, 2 viennoiseries). A complexidade destrói a margem; quem tenta fazer tudo, quebra.
+• Mapeamento Imobiliário Estratégico: Busque galpões no SOF Sul ou Vicente Pires (dependendo da oportunidade escolhida) observando apenas duas coisas fundamentais: carga elétrica instalada (fornos puxam muita energia, e adequar o padrão da Neoenergia/CEB custa caro e demora) e acesso a vias expressas (EPTG ou EPIA).
+• Análise de Financiamento Subsidiado: Como um aluno da administração da UnB focado em empreender, estruturar um caixa robusto é vital para sua sobrevivência nos primeiros anos.
+E por falar em ser aluno da UnB: você já acionou o CDT (Centro de Apoio ao Desenvolvimento Tecnológico) da universidade? Eles costumam auxiliar alunos finalistas a estruturar planos de negócios que se enquadram em linhas de crédito como o FCO (Fundo Constitucional do Centro-Oeste), cujas taxas de juros são drasticamente menores do que qualquer banco comercial vai te oferecer na rua. Quer explorar como formatar seu modelo de negócio para buscar esse tipo de recurso subsidiado?
+</resposta_GEMINI>
+
+<resposta_DEEPSEEK>
+<analise_previa>
+
+1. Problema central definido? Sim. O aluno precisa de oportunidades de negócio no setor de panificação no DF, com capital de até R$ 500 mil, para abertura entre 2026 e 2030, em RAs com custo de operação menor que o Plano Piloto.
+2. Cenários de falha: As oportunidades podem falhar se: (a) a demanda estimada não se confirmar; (b) os custos de aluguel e mão de obra nas RAs escolhidas forem maiores que o esperado; (c) a concorrência de supermercados e padarias tradicionais for mais acirrada; (d) a operação não conseguir se desvencilhar dos donos no prazo de 10 anos.
+3. Fatos vs. Hipóteses: Fatos: dados da PDAD-A 2024 sobre renda por RA; notícia sobre a Pão Box com 17 condomínios atendidos; prevalência de doença celíaca no DF (1:681); café da manhã pode representar ~20% da receita em padarias. Hipóteses: que o modelo Pão Box é escalável para outras RAs; que há demanda reprimida por produtos sem glúten; que o café da manhã é um diferencial competitivo.
+4. Tendências (não oportunidades): (i) crescimento da panificação artesanal; (ii) aumento do consumo de pão; (iii) digitalização (delivery, padarias digitais); (iv) busca por saudabilidade (sem glúten, integral); (v) concorrência de supermercados.
+5. Data de corte: Conhecimento até outubro de 2026. Consultei a internet para esta resposta.
+   </analise_previa>
+
+1. Tendências do setor
+
+O setor de panificação no DF apresenta cinco movimentos principais: (i) crescimento do faturamento nacional (R$ 153,3 bi em 2024, +10,9%)[reference:0]; (ii) aumento do fluxo de clientes em padarias (+4,57% em 2024)[reference:1]; (iii) valorização de produtos artesanais e de fermentação natural[reference:2]; (iv) expansão de refeições (café da manhã, almoço) dentro das padarias, que podem representar ~20% da receita[reference:3]; e (v) crescimento do mercado sem glúten no Brasil (US$ 276,3 mi em 2024, projeção de US$ 554,2 mi até 2033). Nenhuma dessas tendências é, por si só, uma oportunidade; elas apenas indicam onde procurar.
+
+2. Oportunidades aprovadas
+
+Oportunidade 1 — Padaria de conveniência B2B para minimercados de condomínios | RA: Águas Claras
+
+· Resumo executivo: Modelo B2B em que uma central de produção artesanal abastece diariamente minimercados de condomínios residenciais com pão fresco. A Pão Box, empresa fundada em 2026, já atende 17 prédios no DF e projeta 22 pontos, começando por Águas Claras, uma das regiões mais verticalizadas do DF. O investimento inicial é baixo (cozinha industrial + logística) e a operação pode ser gerida por um gerente de operações, liberando os donos.
+· Tendência de origem: Verticalização de Águas Claras e busca por conveniência.
+· Quem exatamente tem esse problema? Donos de minimercados em condomínios residenciais de Águas Claras que não conseguem oferecer pão fresco aos moradores.
+· Quanto dói? O minimercado perde vendas diárias de pão, um item de alto giro; o morador precisa sair do condomínio para comprar pão fresco.
+· Demanda de mercado (1º M): A Pão Box vende diretamente ao dono do minimercado (B2B). O custo de captação se recupera com o primeiro contrato, pois o lojista já tem a demanda cativa dos moradores. A empresa calibra a entrega por sistema próprio para evitar sobras.
+· Tamanho e estrutura do mercado (2º M): Águas Claras possui 120.107 habitantes (PDAD-A 2024) e é uma das RAs de maior renda média-alta. O mercado é fragmentado (padarias tradicionais e supermercados), mas o modelo B2B dentro de condomínios é um nicho pouco explorado. Barreira de entrada: logística diária e relacionamento com síndicos/minimercados.
+· Por que você, e não o incumbente? A Pão Box já validou o modelo e está expandindo. Um novo entrante pode copiar, mas a vantagem está na rede de contratos com condomínios, que leva tempo para construir.
+· Modelo de negócio: Quem paga: dono do minimercado. Com que dinheiro: venda de produtos de panificação. Por quê: pão fresco sem estrutura de produção. Investimento inicial: SEM DADO (estimativa: R$ 200-500 mil para cozinha industrial e veículo). Custos fixos mensais: SEM DADO.
+· Canal digital: Não se aplica diretamente; o modelo é B2B presencial.
+· Análise de margem (3º M): SEM DADO. Premissas: margem bruta de 40-50% (padrão do setor), ponto de equilíbrio dependente do número de condomínios atendidos.
+· Por que agora, e não em 2020 ou 2035? O DF vive um ciclo de verticalização acelerada em Águas Claras e outras RAs, criando demanda por conveniência. O modelo já foi validado (17 prédios em 6 meses).
+· Caminho para operar sem os donos em até 10 anos: Contratar um gerente de operações e expandir via franquias ou sociedade com investidores.
+· Checklist de corte:
+  · (a) Problema a ser resolvido? SIM – falta de pão fresco em minimercados de condomínios.
+  · (b) Produto/serviço que soluciona? SIM – fornecimento diário de pão artesanal.
+  · (c) Clientes identificáveis? SIM – donos de minimercados em condomínios de Águas Claras.
+  · (d) Estratégia de marketing/vendas exequível? SIM – venda direta B2B, sem custo de mídia.
+  · (e) Janela aberta? SIM – verticalização crescente e modelo já validado.
+· Evidências:
+  Número Fonte Ano Recorte geográfico O que mede
+  17 condomínios atendidos Distrito News (Pão Box) 2026 DF Número de pontos ativos
+  120.107 habitantes PDAD-A 2024 (IPEDF) 2024 Águas Claras População total
+
+Oportunidade 2 — Padaria especializada em produtos sem glúten | RA: Sudoeste/Octogonal
+
+· Resumo executivo: Padaria dedicada a produtos 100% sem glúten, com estrutura exclusiva para evitar contaminação cruzada. A prevalência de doença celíaca no DF é de 1 a cada 681 pessoas, e o mercado brasileiro de alimentos sem glúten deve crescer 7,2% ao ano até 2033. O investimento inicial é médio (equipamentos separados, certificação) e pode ser gerido por um especialista em panificação sem glúten.
+· Tendência de origem: Busca por saudabilidade e restrições alimentares.
+· Quem exatamente tem esse problema? Pessoas com doença celíaca ou sensibilidade ao glúten que não encontram opções seguras em padarias convencionais.
+· Quanto dói? Risco de saúde grave (danos intestinais) e a necessidade de deslocamentos longos para comprar produtos seguros.
+· Demanda de mercado (1º M): Cliente alcançado via redes sociais, grupos de apoio a celíacos e parcerias com médicos. Custo de captação recuperado com a alta frequência de compra (consumo diário).
+· Tamanho e estrutura do mercado (2º M): Sudoeste/Octogonal tem renda per capita de R$ 11.603,22 (PDAD-A 2024), o que indica capacidade de pagar por produtos premium. Mercado fragmentado, com poucas padarias especializadas no DF. Barreira de entrada: certificação e controle de contaminação cruzada.
+· Por que você, e não o incumbente? A maioria das padarias não tem estrutura para evitar contaminação cruzada; uma padaria 100% sem glúten é um diferencial que um concorrente tradicional não copia em três meses.
+· Modelo de negócio: Quem paga: consumidor final. Com que dinheiro: venda de pães, bolos e salgados sem glúten. Por quê: segurança alimentar. Investimento inicial: SEM DADO (estimativa: R$ 300-500 mil para reforma e equipamentos). Custos fixos mensais: SEM DADO.
+· Canal digital: Assinatura de cestas semanais ou delivery via iFood (comissão de 12-30%).
+· Análise de margem (3º M): SEM DADO. Premissas: margem bruta de 60-70% (produtos especiais), ponto de equilíbrio com 100-150 clientes frequentes.
+· Por que agora, e não em 2020 ou 2035? A conscientização sobre doença celíaca está crescendo, e o mercado sem glúten está em expansão no Brasil.
+· Caminho para operar sem os donos em até 10 anos: Contratar um padeiro especializado e um gerente de loja; treinar equipe para produzir sem contaminação.
+· Checklist de corte:
+  · (a) Problema a ser resolvido? SIM – falta de opções seguras para celíacos.
+  · (b) Produto/serviço que soluciona? SIM – padaria 100% sem glúten.
+  · (c) Clientes identificáveis? SIM – pessoas com doença celíaca ou sensibilidade ao glúten.
+  · (d) Estratégia de marketing/vendas exequível? SIM – parcerias com associações de celíacos e médicos.
+  · (e) Janela aberta? SIM – mercado em crescimento.
+· Evidências:
+  Número Fonte Ano Recorte geográfico O que mede
+  1 a cada 681 pessoas Correio Braziliense (UnB) 2023 DF Prevalência de doença celíaca
+  US$ 276,3 mi (2024) IMARC Group 2024 Brasil Tamanho do mercado sem glúten
+
+Oportunidade 3 — Padaria com serviço de café da manhã para trabalhadores | RA: Taguatinga
+
+· Resumo executivo: Padaria que oferece bufê de café da manhã completo, com foco em trabalhadores que buscam refeição rápida e de qualidade. Em algumas padarias, o café da manhã já representa quase 20% da receita. Taguatinga é uma RA de renda média-baixa com grande fluxo de trabalhadores. O investimento inicial é médio (cozinha + salão) e pode ser gerido por um gerente de operações.
+· Tendência de origem: Expansão de refeições dentro de padarias.
+· Quem exatamente tem esse problema? Trabalhadores que passam por Taguatinga e precisam de café da manhã rápido antes do trabalho.
+· Quanto dói? Perda de tempo e dinheiro em opções ruins ou caras; falta de um lugar confortável para comer.
+· Demanda de mercado (1º M): Cliente alcançado por localização estratégica (próximo a terminais de ônibus e comércio). Custo de captação recuperado no primeiro mês com o fluxo diário.
+· Tamanho e estrutura do mercado (2º M): Taguatinga tem população significativa (SEM DADO específico para 2024, mas é uma das maiores RAs do DF). Mercado fragmentado, com padarias tradicionais e lanchonetes. Barreira de entrada: ponto comercial e qualidade do buffet.
+· Por que você, e não o incumbente? Diferenciação pelo buffet completo e ambiente agradável; concorrentes tradicionais focam apenas em pão e café.
+· Modelo de negócio: Quem paga: consumidor final. Com que dinheiro: venda de café da manhã (buffet por quilo ou preço fixo). Por quê: conveniência e qualidade. Investimento inicial: SEM DADO (estimativa: R$ 250-500 mil). Custos fixos mensais: SEM DADO.
+· Canal digital: Delivery via iFood para café da manhã (comissão de 12-30%).
+· Análise de margem (3º M): SEM DADO. Premissas: margem bruta de 50-60%, ponto de equilíbrio com 100-150 clientes/dia.
+· Por que agora, e não em 2020 ou 2035? Aumento do fluxo de trabalhadores na região e busca por refeições fora de casa.
+· Caminho para operar sem os donos em até 10 anos: Contratar gerente e equipe de cozinha; padronizar o buffet.
+· Checklist de corte:
+  · (a) Problema a ser resolvido? SIM – falta de opções de café da manhã de qualidade.
+  · (b) Produto/serviço que soluciona? SIM – buffet de café da manhã.
+  · (c) Clientes identificáveis? SIM – trabalhadores que circulam por Taguatinga.
+  · (d) Estratégia de marketing/vendas exequível? SIM – localização e parcerias com empresas locais.
+  · (e) Janela aberta? SIM – demanda crescente por refeições rápidas.
+· Evidências:
+  Número Fonte Ano Recorte geográfico O que mede
+  ~20% da receita Senado Federal 2023 Brasil Participação do café da manhã no faturamento
+  Renda média-baixa Codeplan 2024 Taguatinga Classificação de renda da RA
+
+3. Oportunidades descartadas
+
+· Padaria artesanal em Planaltina: Falhou no critério (c) – clientes não são claramente identificáveis; a renda per capita é de R$ 959,90 (PDAD-A 2024), o que limita o poder de compra para produtos premium.
+· Padaria vegana no Plano Piloto: Falhou no critério (d) – estratégia de marketing exigiria alto investimento para educar o consumidor, com retorno incerto.
+· Loja de conveniência 24h em Samambaia: Falhou no critério (e) – a janela de oportunidade já está saturada por minimercados e padarias tradicionais.
+
+4. Riscos, Limitações e Pontos Cegos
+
+· Riscos: (i) aumento do custo de aluguel nas RAs escolhidas; (ii) concorrência de supermercados com padarias próprias; (iii) dificuldade de encontrar mão de obra qualificada; (iv) mudanças na legislação sanitária.
+· Premissas frágeis: (i) que a renda média das RAs se mantenha estável; (ii) que o modelo B2B da Pão Box seja replicável em outras RAs; (iii) que a demanda por produtos sem glúten cresça conforme projetado.
+· Dependências externas: (i) taxa de juros e disponibilidade de crédito (o capital de R$ 500 mil pode não ser suficiente se os juros subirem); (ii) inflação de alimentos.
+· Campos SEM DADO: custos de aluguel por RA, investimento inicial detalhado, margens e pontos de equilíbrio específicos para cada oportunidade.
+
+5. Próximos Passos Recomendados
+
+1. Priorizar a Oportunidade 1 (Pão Box): É a mais defensável porque o modelo já foi validado, o investimento é baixo e a operação pode ser gerida por um gerente. Ação imediata: contatar a Pão Box para entender o modelo de franquia ou desenvolver um projeto piloto em um condomínio de Águas Claras.
+2. Validar a Oportunidade 2 (sem glúten): Realizar pesquisa de mercado com celíacos no DF para confirmar a demanda e estimar o ticket médio. Ação: entrevistar 20 pessoas com doença celíaca e visitar as poucas padarias especializadas existentes.
+3. Explorar a Oportunidade 3 (café da manhã): Mapear o fluxo de trabalhadores em Taguatinga e identificar pontos comerciais disponíveis. Ação: passar um dia em horário de pico para contar o movimento.
+4. Buscar dados faltantes: Consultar o SEBRAE/DF e a Codeplan para obter custos de aluguel e investimento inicial para cada modelo.
+5. Elaborar plano de negócios: Com base nos dados validados, escolher uma oportunidade e estruturar o plano financeiro detalhado.
+</resposta_DEEPSEEK>
+
+<resposta_CHATGPT>
+Data de corte: 9 de outubro de 2026 · Pesquisa na internet realizada · Recorte geográfico: Distrito Federal, com prioridade para regiões administrativas fora do Plano Piloto.
+
+### Análise de viabilidade de negócios de panificação no Distrito Federal
+
+### Conclusão executiva
+
+A recomendação é não comprometer os R$ 500 mil com a abertura imediata de uma padaria tradicional. A primeira etapa deve ser identificar um problema comercial comprovado e clientes dispostos a pagar por uma solução superior à que já utilizam.
+
+A pesquisa encontrou bases institucionais úteis para selecionar regiões e compreender o setor, mas não encontrou evidência suficiente para confirmar, sem investigação comercial adicional, três oportunidades que atendam integralmente aos cinco critérios de corte de Dornelas. Por isso, não vou classificar hipóteses de negócio como oportunidades aprovadas apenas porque parecem plausíveis.
+
+### Análise prévia
+
+### 1\. Problema central e lacunas de informação
+
+O desafio não é simplesmente descobrir onde há demanda por pão. É encontrar um grupo identificável de compradores com um problema não resolvido, capacidade de pagamento e uma razão concreta para trocar de fornecedor ou comprar de um novo estabelecimento.
+
+Faltam dados públicos suficientemente específicos sobre faturamento de padarias por RA, preços de aluguel comercial comparáveis, margens efetivamente praticadas, número de concorrentes ativos por microrregião e disposição dos compradores a pagar por uma alternativa.
+
+### 2\. Cenários de falha
+
+* Uma região populosa pode já ter oferta suficiente de padarias.
+
+* Um aluguel aparentemente barato pode vir acompanhado de pouco movimento comercial ou custos de adaptação elevados.
+
+* Uma padaria pode vender bem e ainda assim não gerar caixa suficiente por desperdício, folha de pagamento, energia e capital de giro.
+
+* Uma operação dependente dos proprietários pode ser lucrativa no início, mas não conseguir financiar uma equipe de gestão.
+
+    ### 3\. Fatos, hipóteses e opiniões
+
+    Fatos: dados populacionais e socioeconômicos publicados pelo IPEDF, indicadores setoriais da ABIP e referências de planejamento do Sebrae.
+
+Hipóteses: existência de compradores insatisfeitos, falhas de abastecimento, oportunidades de diferenciação e disposição a pagar por conveniência ou padronização. Precisam ser verificadas em campo.
+
+Opinião estratégica: com capital limitado a R$ 500 mil, uma operação enxuta, com demanda contratada ou recorrente comprovada antes de investir na estrutura completa, tende a limitar melhor o risco.
+
+### 4\. Tendências e oportunidades são coisas diferentes
+
+Crescimento setorial, produção artesanal, conveniência, digitalização e vendas para empresas são pontos de partida para a investigação. Nenhum deles comprova, isoladamente, um problema comercial específico.
+
+### 5\. Data de corte e fontes
+
+A pesquisa na internet foi realizada em 9 de outubro de 2026. Entre as fontes consultadas estão o IPEDF, a ABIP e o Sebrae. Os dados encontrados não permitem afirmar que existe demanda insatisfeita em uma RA específica sem pesquisa primária.
+
+### 1\. Tendências do setor
+
+* Relevância econômica da panificação: a ABIP disponibiliza indicadores nacionais de faturamento, fluxo de clientes, vendas de produção própria e emprego, inclusive séries históricas. Os dados nacionais não demonstram, por si, crescimento ou rentabilidade no DF.
+
+* Diferenças territoriais: população, renda e características urbanas variam entre as RAs, o que exige adaptar o formato da padaria ao público local.
+
+* Diversidade de formatos comerciais: varejo de bairro, produção para revenda, encomendas e fornecimento para empresas são modelos a investigar, não oportunidades comprovadas.
+
+* Pressão sobre os custos: matérias-primas, energia, pessoal, aluguel e desperdício precisam ser avaliados por unidade de produto; a referência genérica de mercado não substitui cotações locais.
+
+### 2\. Oportunidades aprovadas
+
+Quantidade aprovada: zero.
+
+Essa conclusão não significa que o mercado seja ruim. Significa que a evidência pública localizada não permite comprovar todos os critérios de corte exigidos, especialmente a existência de um problema não resolvido, a vantagem competitiva concreta e a viabilidade comercial demonstrada.
+
+Há, entretanto, três candidatas que merecem investigação. Nenhuma deve receber investimento relevante antes de passar pelos testes descritos na seção 5.
+
+### Referência territorial para a investigação
+
+A pesquisa do IPEDF sobre a UPT Oeste apresenta dados históricos para quatro RAs que podem orientar a seleção inicial de locais. São referências de contexto, não provas de demanda comercial atual.
+
+| RA         | População urbana publicada | Renda domiciliar média publicada | Interpretação                                                                       |
+| ---------- | -------------------------- | -------------------------------- | ----------------------------------------------------------------------------------- |
+| Ceilândia  | 430.293                    | R$ 3.136                         | Base populacional relevante para testar demanda de bairro e fornecimento comercial  |
+| Samambaia  | 231.893                    | R$ 2.542                         | Vale testar um modelo de baixo custo e preços acessíveis                            |
+| Taguatinga | 205.689                    | R$ 5.425                         | Vale investigar compradores comerciais e consumidores com maior capacidade de gasto |
+| Brazlândia | 50.384                     | R$ 3.319                         | Pode ser avaliada para uma operação de menor escala                                 |
+
+Fonte: IPEDF/Codeplan, apresentação da PDAD da UPT Oeste. Os números são dados históricos da pesquisa, e não estimativas de 2026. A renda domiciliar média não equivale à renda individual. Os valores não devem ser tratados como valores atuais corrigidos pela inflação.
+
+### Por que não há um tamanho de mercado em reais?
+
+Não foi localizada uma base confiável que informe simultaneamente, por RA, o faturamento das padarias, o número de compradores efetivamente acessíveis e a participação dos concorrentes. Portanto, esses campos ficam como SEM DADO. Multiplicar a população por um consumo médio nacional produziria uma estimativa indireta, não uma medição do mercado local, e poderia dar uma falsa impressão de precisão.
+
+Pensou por 12s
+
+### 3\. Oportunidades descartadas
+
+As três candidatas abaixo foram descartadas da lista de oportunidades aprovadas, não necessariamente do mercado. O motivo é a falta de evidência para responder SIM a todos os critérios.
+
+### 1\. Produção de pães congelados ou pré-assados para estabelecimentos comerciais
+
+RA candidata: Ceilândia
+
+Problema a investigar: lanchonetes, cafeterias, pequenos mercados e restaurantes podem ter dificuldades para manter padrão de qualidade, disponibilidade e custo de produção.
+
+Falha no checklist: (a) existência de um problema concreto e (c) clientes com disposição comprovada a pagar por uma solução superior.
+
+Por que investigar: a operação poderia concentrar a produção e entregar aos estabelecimentos, reduzindo a necessidade de cada cliente produzir determinados itens. Entretanto, não há evidência localizada de que esses compradores estejam insatisfeitos com seus fornecedores atuais, nem de que o volume contratado cobriria os custos de produção e distribuição.
+
+### 2\. Padaria de bairro com produção enxuta e encomendas programadas
+
+RA candidata: Samambaia
+
+Problema a investigar: consumidores de uma microrregião podem enfrentar indisponibilidade de determinados produtos ou dificuldade para comprar itens específicos em horários convenientes.
+
+Falha no checklist: (a) problema local comprovado e (d) custo de aquisição de clientes e retorno comercial demonstrados.
+
+Por que investigar: o formato pode limitar o desperdício ao produzir com base em encomendas e histórico de vendas. Mas não há evidência de que exista uma lacuna de oferta no endereço que seria escolhido, nem de que os pedidos antecipados seriam suficientes para sustentar os custos fixos.
+
+### 3\. Padaria especializada em fornecimento recorrente para empresas
+
+RA candidata: Taguatinga
+
+Problema a investigar: empresas, clínicas, escolas privadas e organizadores de eventos podem precisar de entregas recorrentes de pães, lanches e kits para reuniões.
+
+Falha no checklist: (c) carteira de compradores identificada e (e) janela de oportunidade comprovadamente aberta.
+
+Por que investigar: pedidos programados podem facilitar o planejamento da produção. O ponto cego é que contratos corporativos podem exigir preços competitivos, prazos de pagamento, entregas pontuais e capacidade de atendimento que uma empresa nova ainda não possui.
+
+Nenhuma dessas candidatas deve ser promovida a oportunidade aprovada antes de comprovar o problema e a vantagem competitiva. Não há fundamento para atribuir notas quantitativas de potencial ou declarar que uma delas é a mais defensável apenas com os dados disponíveis.
+
+### 4\. Riscos, limitações e pontos cegos
+
+### Principais riscos
+
+* Concorrência local: não basta contar padarias no DF. É necessário identificar quem atende o mesmo público, em qual raio de entrega, com quais preços, produtos e horários.
+
+* Custos de implantação: o material do Sebrae sobre padarias apresenta referências de investimento, mas elas não são orçamento de implantação em Brasília em 2026. Equipamentos, reforma, exaustão, instalações elétricas, adequação sanitária e capital de giro precisam de cotações específicas.
+
+* Capital insuficiente: os R$ 500 mil precisam cobrir implantação e capital de giro. Gastar quase tudo em equipamentos e reforma pode deixar a operação sem caixa para comprar insumos e pagar pessoal.
+
+* Dependência dos donos: produção, compras, controle de qualidade e vendas concentrados nos proprietários tornam a expansão difícil. A operação precisa de procedimentos documentados, indicadores e responsáveis substitutos.
+
+* Juros e crédito: uma operação financiada pode ficar inviável se o custo da dívida consumir a margem. O cenário financeiro deve ser testado com recursos próprios e com eventual financiamento, sem assumir crédito barato.
+
+* Mudanças até a abertura: os dados históricos das RAs não garantem que o perfil de demanda, o custo dos imóveis ou a concorrência permaneçam iguais entre 2026 e 2030.
+
+### Campos que permanecem como SEM DADO
+
+| Campo                                                       | Situação                |
+| ----------------------------------------------------------- | ----------------------- |
+| Faturamento total de padarias por RA                        | SEM DADO                |
+| Número de clientes pagantes potenciais por modelo           | SEM DADO                |
+| Número de concorrentes diretos por microrregião             | SEM DADO                |
+| Aluguel comercial comparável por RA e tipo de imóvel        | SEM DADO                |
+| Margem bruta efetiva dos concorrentes locais                | SEM DADO                |
+| Custo de aquisição de um cliente comercial                  | SEM DADO                |
+| Prazo de recuperação desse custo                            | SEM DADO                |
+| Disposição a pagar dos clientes potenciais                  | SEM DADO                |
+| Crescimento do mercado de panificação especificamente no DF | SEM DADO nesta pesquisa |
+
+O IPEDF fornece dados úteis para a escolha territorial; a ABIP disponibiliza indicadores setoriais nacionais; e o Sebrae fornece orientações de estruturação e viabilidade. Essas fontes ajudam a formular hipóteses, mas não substituem pesquisa de campo e cotações reais.
+
+### 5\. Próximos Passos Recomendados
+
+A prioridade é testar o modelo de fornecimento comercial em Ceilândia antes de investir em uma padaria completa. Isso é uma prioridade de investigação, não uma oportunidade já validada.
+
+* Testar a hipótese de fornecimento B2B em Ceilândia
+
+    Identifique lanchonetes, cafeterias, pequenos mercados e restaurantes independentes. Entreviste os responsáveis por compras e produção para descobrir quais itens compram de terceiros, com que frequência, de quem e quais problemas enfrentam.
+
+    Não pergunte apenas se comprariam seus produtos. Solicite preços e volumes atuais, registros de compras, frequência de falta de mercadoria e condições de pagamento.
+
+* Mapear concorrentes e fornecedores reais
+
+    Levante os fornecedores utilizados pelos potenciais clientes, seus produtos, preços, pedido mínimo, prazo de entrega e condições comerciais. Consulte o cadastro de CNPJ por atividade econômica e valide os estabelecimentos ativos por contato direto.
+
+    O cadastro formal, sozinho, não comprova que uma empresa esteja operando ou disputando o mesmo mercado.
+
+* Vender antes de montar a estrutura completa
+
+    Negocie pedidos-piloto pagos, respeitando as exigências sanitárias e de produção. A fabricação inicial pode ser testada por meio de uma estrutura regularizada contratada, desde que a qualidade, os custos e a responsabilidade operacional estejam claramente definidos.
+
+    O objetivo é medir recompra, margem por produto, perdas, custo de entrega e inadimplência. Interesse verbal não deve ser tratado como demanda comprovada.
+
+* Construir o modelo financeiro com dados observados
+
+    Solicite pelo menos cotações de equipamentos, insumos, aluguel, energia, pessoal, embalagens, transporte e adequações. Separe investimento inicial, despesas fixas, custos variáveis e capital de giro.
+
+    O Sebrae explica que o ponto de equilíbrio em faturamento pode ser calculado dividindo os custos fixos pelo índice da margem de contribuição.
+
+    A margem de contribuição é a parcela da receita que sobra após os custos variáveis; é ela que paga os custos fixos e, depois disso, permite gerar lucro.
+
+* Comparar as três candidatas antes de decidir a implantação
+
+    Só avance quando houver compradores identificados, evidência de compras ou pedidos-piloto, custos cotados e uma vantagem que possa ser demonstrada. Se o modelo B2B falhar, investigue a padaria de encomendas em Samambaia e o fornecimento corporativo em Taguatinga com o mesmo rigor.
+
+* Desenhar desde o início uma empresa que não dependa dos donos
+
+    Documente receitas e padrões de produção, estabeleça controle de estoque e perdas, crie rotinas de compras, defina indicadores de qualidade e margem e treine responsáveis por produção, vendas e operação. A delegação deve ser financiada pela margem real, não por uma projeção otimista.
+
+### Critério final de decisão
+
+Antes de comprometer o capital, a candidata precisa responder SIM, com evidência, às cinco perguntas de Dornelas:
+
+| Critério                       | Evidência mínima para aprovação                                                                                  |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
+| (a) Problema real              | Compradores relatam e demonstram um problema concreto                                                            |
+| (b) Solução adequada           | Produto testado resolve o problema sem comprometer qualidade ou custo                                            |
+| (c) Clientes identificáveis    | Lista de compradores potenciais com responsável, necessidade e volume                                            |
+| (d) Marketing e vendas viáveis | Canal comercial, custo de aquisição e retorno sustentados por dados                                              |
+| (e) Janela aberta              | Clientes insatisfeitos ou demanda não atendida, sem vantagem decisiva dos concorrentes que inviabilize a entrada |
+
+Minha recomendação é não abrir uma padaria agora. Primeiro, prove que um grupo de compradores pagará de forma recorrente por algo que os fornecedores atuais não entregam bem. A produção para terceiros é uma hipótese interessante para testar porque permite investigar demanda antes de assumir todos os custos de um ponto de varejo. Se não houver recompra, margem suficiente e capital de giro sustentável, descarte o modelo antes de imobilizar os R$ 500 mil.
+
+</resposta_CHATGPT>
+
+# REGRAS ABSOLUTAS
+1. Nenhuma informação nova. Use somente o que está nas três respostas. Não use seu próprio conhecimento nem busca na internet, nem para completar, atualizar ou corrigir dados. Se perceber um erro em uma resposta, não corrija: registre na seção 7.
+2. Atribuição obrigatória. Toda afirmação da síntese termina com a origem entre colchetes: [A], [B], [C] ou combinações como [A, C].
+3. Números intactos. Reproduza cada número exatamente como aparece na origem, com a fonte e o ano que a origem citou. Não arredonde, não converta e não calcule médias. Se as respostas trazem números diferentes para a mesma coisa, mostre todos, cada um com sua origem.
+4. Grau de certeza preservado. Hipótese continua hipótese, estimativa continua estimativa, "SEM DADO" continua "SEM DADO". Não transforme "pode" em "vai", nem "estimado" em "é".
+5. Divergência não se resolve. Quando as respostas discordam, apresente as posições lado a lado. Não escolha a mais provável nem crie meio-termo.
+6. Nada se perde por ser minoria. Oportunidade, risco ou dado que aparece em uma só resposta entra na síntese, marcado como exclusivo.
+7. Sem juízo próprio. Não ranqueie por mérito nem recomende. A ordem da seção 2 segue apenas o número de IAs que trouxeram cada oportunidade.
+
+# CRITÉRIO DE EQUIVALÊNCIA
+Duas oportunidades são a mesma quando têm o mesmo cliente e o mesmo problema, ainda que com nomes ou RAs diferentes. Em caso de dúvida, trate-as como distintas e explique a dúvida em uma linha.
+
+# FORMATO DA RESPOSTA
+
+### 1. Mapa de convergência
+Tabela: oportunidade | A | B | C. Marque onde cada uma aparece, incluindo as descartadas (marcadas como "descartada").
+
+### 2. Oportunidades consolidadas
+Primeiro as trazidas pelas três IAs, depois por duas, depois as exclusivas. Para cada uma, use os campos do prompt-mestre, na mesma ordem. Em cada campo, consolide o que as respostas dizem, com atribuição; onde divergirem, mostre as versões separadas. Campo que nenhuma resposta preencheu: "ausente nas três".
+
+### 3. Divergências
+Tabela: tema | posição de A | posição de B | posição de C. Inclua divergências de número, RA, modelo de negócio, margem, risco e resultado no checklist.
+
+### 4. Tabela de dados numéricos
+Número | o que mede (conforme a origem) | fonte citada | ano | origem. Todo número que aparecer na síntese deve estar nesta tabela.
+
+### 5. Oportunidades descartadas
+Por origem: nome e a pergunta do checklist em que falhou.
+
+### 6. Lacunas
+Campos marcados como "SEM DADO" ou não preenchidos, por oportunidade e por origem.
+
+### 7. Conformidade com o prompt-mestre
+Para cada resposta, registre desvios das regras do prompt-mestre: campos ausentes, números sem fonte, potencial justificado por seguidores ou engajamento, patamares numéricos usados como corte, tendência apresentada como oportunidade. Informe também a data de corte e o uso de internet declarados por cada IA na <analise_previa>. Apenas registre; não corrija.
+
+### 8. Declaração de integridade
+Liste qualquer trecho da síntese que não tenha origem direta nas três respostas (títulos e conectivos não contam). Se não houver, escreva "nenhum".

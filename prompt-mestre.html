@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>O prompt-mestre · Panificação no DF</title>
+<meta name="description" content="Estudo de caso de Criação de Negócios (UnB, 2026/2): detecção de oportunidades em panificação no DF com uma cadeia de quatro IAs e a auditoria da síntese.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cellipse cx='16' cy='18' rx='13' ry='9' fill='%23b5651d'/%3E%3Cpath d='M9 14l3 6M15 12l2 7M21 13l2 6' stroke='%23f6e7c8' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body class="main">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="topo-in">
+    <a class="marca" href="index.html">
+      <span class="marca-t">Panificação no DF</span>
+      <span class="marca-s">Oportunidades com uma cadeia de IAs</span>
+    </a>
+    <p class="id-aluno">Giovani Machado Rigon · Mat. 16/0070686 · Criação de Negócios (ADM0150) · 2026/2</p>
+  </div>
+  <details class="menu">
+    <summary>Menu</summary>
+    <nav aria-label="Seções do site"><ul><li><a href="index.html">Abertura</a></li><li><a href="prompt-mestre.html" class="ativo" aria-current="page">Prompt-mestre</a></li><li><a href="protocolo.html">Protocolo</a></li><li class="grupo"><span>Síntese auditada</span><ul><li><a href="auditoria-rastreabilidade.html">Rastreabilidade</a></li><li><a href="auditoria-verificacao.html">Fontes primárias</a></li><li><a href="auditoria-regua.html">Aplicação da régua</a></li></ul></li><li><a href="conclusao.html">Conclusão</a></li><li><a href="anexos.html">Anexos</a></li></ul></nav>
+  </details>
+  <nav class="menu-largo" aria-label="Seções do site"><ul><li><a href="index.html">Abertura</a></li><li><a href="prompt-mestre.html" class="ativo" aria-current="page">Prompt-mestre</a></li><li><a href="protocolo.html">Protocolo</a></li><li class="grupo"><span>Síntese auditada</span><ul><li><a href="auditoria-rastreabilidade.html">Rastreabilidade</a></li><li><a href="auditoria-verificacao.html">Fontes primárias</a></li><li><a href="auditoria-regua.html">Aplicação da régua</a></li></ul></li><li><a href="conclusao.html">Conclusão</a></li><li><a href="anexos.html">Anexos</a></li></ul></nav>
+</header>
+<main id="conteudo">
+<article class="conteudo">
+<h1>O prompt-mestre</h1>
+<p>O prompt abaixo foi enviado <strong>sem nenhuma alteração</strong> ao Gemini, ao DeepSeek e ao ChatGPT. À esquerda está o texto na íntegra, dividido em blocos na ordem em que aparece; à direita, o instrumento de aula que cada bloco carrega e o efeito que eu esperava dele. Juntando os blocos da esquerda, de cima para baixo, tem-se o prompt completo, que também pode ser <a href="assets/prompt-mestre.txt">baixado em texto puro</a>.</p>
+<div class="caixa">
+<p><strong>A ideia geral.</strong> Um prompt comum pede oportunidades e aceita o que vier. Este chega com a régua pronta: diz o que conta como oportunidade (Aula 4), que evidência aceitar (Aula 4), o que corta uma candidata (Aula 5), em que campos responder (Aulas 4, 5 e 6) e o que rejeitar (Aula 6). O trabalho analítico que eu faria depois, à mão, foi transferido para a instrução.</p>
+</div>
+<div class="tabela media">
+<div class="tabela"><table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Decisão que o prompt precisava tomar</th>
+<th>Onde ela está</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Recorte (setor, região, porte, capital, horizonte)</td>
+<td>Bloco 2</td>
+</tr>
+<tr class="even">
+<td>Critério de corte e destino de quem não passa</td>
+<td>Blocos 6 e 11, seções 2 e 3 do formato</td>
+</tr>
+<tr class="odd">
+<td>Padrão de evidência e o que fazer sem dado confiável</td>
+<td>Bloco 9 e campo Evidências</td>
+</tr>
+<tr class="even">
+<td>Formato de saída em campos fixos</td>
+<td>Bloco 12</td>
+</tr>
+<tr class="odd">
+<td>Quantidade de oportunidades</td>
+<td>Bloco 4</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<h2 id="bloco-1-papel-e-contexto">Bloco 1 · Papel e contexto</h2>
+<div class="bloco">
+<div class="bloco-prompt">
+<pre class="prompt"><code># PAPEL E CONTEXTO
+Você é um especialista sênior e consultor estratégico na área de prospecção de novos negócios, reconhecido por sua visão crítica, pragmatismo e capacidade de traduzir problemas complexos em soluções acionáveis.
+
+Analise cuidadosamente as variáveis fornecidas abaixo antes de formular sua resposta:
+
+&lt;variaveis&gt;</code></pre>
+</div>
+<div class="bloco-just">
+<p><span class="tag">Estrutura-base</span></p>
+<p>Estrutura herdada da Atividade 1: define um papel exigente para a IA e pede que as variáveis sejam lidas antes de qualquer resposta. Não carrega instrumento das Aulas 4 a 6.</p>
+<p><strong>Efeito esperado:</strong> uma resposta de consultor crítico, que questiona a ideia, e não de entusiasta do setor. As variáveis ficam delimitadas pela tag <code>&lt;variaveis&gt;</code>, separadas das instruções de processo e de formato.</p>
+</div>
+</div>
+<h2 id="bloco-2-recorte">Bloco 2 · Recorte</h2>
+<div class="bloco">
+<div class="bloco-prompt">
+<pre class="prompt"><code>- Cenário Atual: Um aluno de graduação de administração da UnB, está no último semestre do curso e deseja empreender. Ele precisa de ajuda para prospectar oportunidades de mercado a serem exploradas em Brasília.
+- Setor: Alimentos e bebidas, especificamente o mercado de panificação (padarias)
+- Região: Distrito Federal, nas Regiões Administrativas (RAs) no entorno do Plano Piloto onde o custo de operação seja menor. Indique a RA de cada oportunidade e justifique a escolha com dados.
+- Porte do negócio: Pequeno ou médio porte
+- Capital disponível: Até R$ 500.000,00
+- Horizonte: Abertura entre 2026 e 2030. A operação começa dependente dos donos, mas deve ser desenhada para funcionar sem eles no médio e longo prazo (até 10 anos após a abertura).</code></pre>
+</div>
+<div class="bloco-just">
+<p><span class="tag">Recorte · Leitura crítica de dado (Aula 4) · 3Ms (Aula 5)</span></p>
+<p>Prompt sem recorte devolve lugar-comum. Aqui ficam fixados setor, região, porte, capital e horizonte.</p>
+<ul>
+<li><strong>Região:</strong> exigir a RA de cada oportunidade, justificada com dados, prepara o terreno para a <a href="index.html#leitura-critica">leitura crítica de dado</a>: o erro provável é usar número nacional da panificação como se valesse para uma RA.</li>
+<li><strong>Capital de R$ 500 mil:</strong> é o limite que torna decisivos o 3º M (margem e ponto de equilíbrio) e o capital inicial nos <a href="index.html#timmons">critérios de potencial</a>.</li>
+<li><strong>Horizonte:</strong> abertura entre 2026 e 2030 e operação desenhada para funcionar sem os donos em até 10 anos, o que vira um campo próprio do formato.</li>
+</ul>
+<p><strong>Efeito esperado:</strong> oportunidades comparáveis entre si, todas no mesmo território e com a mesma restrição de capital.</p>
+</div>
+</div>
+<h2 id="bloco-3-definição-de-oportunidade">Bloco 3 · Definição de oportunidade</h2>
+<div class="bloco">
+<div class="bloco-prompt">
+<pre class="prompt"><code>- Definição de oportunidade: Problema concreto de um cliente identificável, que ele pagaria para resolver e que o negócio resolve melhor do que quem já atende esse cliente. Tendência (movimento geral do setor, como &quot;crescimento da panificação artesanal&quot;) não é oportunidade; é apenas o lugar onde procurar.</code></pre>
+</div>
+<div class="bloco-just">
+<p><span class="tag">Tendência × oportunidade (Aula 4)</span></p>
+<p>Padaria é um ramo tradicional, com demanda conhecida e muita concorrência. Sem essa distinção, a tendência acaba apresentada como se fosse oportunidade, e as três IAs devolveriam a mesma resposta genérica: “abra uma padaria artesanal”.</p>
+<p><strong>Efeito esperado:</strong> exigir um cliente identificável, que pagaria para resolver o problema e que o negócio atende melhor do que quem já o atende, força cada resposta a sair do geral para o específico. A tendência fica rebaixada a “lugar onde procurar”. <a href="index.html#tendencia">Justificativa completa</a>.</p>
+</div>
+</div>
+<h2 id="bloco-4-quantidade">Bloco 4 · Quantidade</h2>
+<div class="bloco">
+<div class="bloco-prompt">
+<pre class="prompt"><code>- Quantidade: Até 3 oportunidades aprovadas, ordenadas da mais à menos defensável. Se menos de 3 passarem nos critérios de corte, entregue menos e diga isso.</code></pre>
+</div>
+<div class="bloco-just">
+<p><span class="tag">Quantidade</span></p>
+<p>Pedir muitas oportunidades favorece a lista genérica; pedir poucas força a seleção. O limite é de até três, ordenadas da mais à menos defensável.</p>
+<p><strong>Efeito esperado:</strong> a instrução “se menos de 3 passarem nos critérios de corte, entregue menos e diga isso” dá à IA uma saída honesta e impede que ela complete a lista para cumprir a cota. É o que liga a quantidade ao filtro de corte do bloco 6.</p>
+</div>
+</div>
+<h2 id="bloco-5-objetivo-público-e-profundidade">Bloco 5 · Objetivo, público e profundidade</h2>
+<div class="bloco">
+<div class="bloco-prompt">
+<pre class="prompt"><code>- Objetivo Final: Um resumo executivo para cada oportunidade aprovada, utilizando dados reais e referências reais para embasar cada oportunidade.
+- Público-Alvo: Um aluno da administração da UnB que deseja começar a empreender.
+- Nível de Profundidade: Intermediário. Preciso conseguir tomar a decisão de qual oportunidade focar, para construir o negócio de fato (estruturar plano de negócios e etc)</code></pre>
+</div>
+<div class="bloco-just">
+<p><span class="tag">Estrutura-base</span></p>
+<p>Define o entregável (um resumo executivo por oportunidade aprovada, com dados e referências reais), quem vai lê-lo e para que serve: decidir em qual oportunidade focar antes de montar o plano de negócios.</p>
+<p><strong>Efeito esperado:</strong> profundidade intermediária, suficiente para comparar e decidir, sem virar plano de negócios completo.</p>
+</div>
+</div>
+<h2 id="bloco-6-critérios-de-corte">Bloco 6 · Critérios de corte</h2>
+<div class="bloco">
+<div class="bloco-prompt">
+<pre class="prompt"><code>- Critérios de corte (checklist final de Dornelas): só entra a oportunidade que responder SIM, com justificativa, às cinco perguntas:
+  (a) Existe um problema a ser resolvido?
+  (b) Existe um produto ou serviço que solucionará esse problema?
+  (c) É possível identificar com clareza os potenciais clientes?
+  (d) É possível implantar uma estratégia de marketing e vendas exequível, em custo e retorno?
+  (e) A janela da oportunidade está aberta?
+  A que falhar em qualquer uma vai para a lista de descartadas.</code></pre>
+</div>
+<div class="bloco-just">
+<p><span class="tag">Checklist final de Dornelas (Aula 5)</span></p>
+<p>É o critério de corte do prompt. A oportunidade que falha em qualquer das cinco perguntas não entra e vai para a lista de descartadas.</p>
+<p><strong>Efeito esperado:</strong> por ser binário, deixa as três respostas comparáveis. Exigir justificativa para cada SIM impede o checklist preenchido no automático, e a lista de descartadas permite ver o filtro funcionando. É também o teste que aplico, por conta própria, às finalistas na <a href="auditoria-regua.html">aplicação da régua</a>. <a href="index.html#checklist">Justificativa completa</a>.</p>
+</div>
+</div>
+<h2 id="bloco-7-critérios-de-potencial">Bloco 7 · Critérios de potencial</h2>
+<div class="bloco">
+<div class="bloco-prompt">
+<pre class="prompt"><code>- Critérios de potencial (Timmons): avalie necessidade dos clientes, estrutura do mercado, barreiras de entrada e capital inicial apenas de forma qualitativa. NÃO use os patamares numéricos (crescimento de 30% a 50% ao ano, ponto de equilíbrio em menos de 2 anos) como corte: eles foram calibrados para startups de alto crescimento e reprovariam qualquer padaria saudável.</code></pre>
+</div>
+<div class="bloco-just">
+<p><span class="tag">Alto e baixo potencial, Timmons (Aula 5) · usado em parte</span></p>
+<p>Mantive os critérios de lógica (necessidade do cliente, estrutura do mercado, barreiras de entrada e capital inicial), que valem para qualquer negócio.</p>
+<p>Deixei de fora os patamares numéricos (30% a 50% de crescimento ao ano e ponto de equilíbrio em menos de dois anos): vêm do capital de risco, foram pensados para startups e reprovariam qualquer padaria saudável num mercado maduro.</p>
+<p><strong>Efeito esperado:</strong> a proibição explícita impede que alguma IA use esses números como corte e descarte tudo. <a href="index.html#timmons">Justificativa completa</a>.</p>
+</div>
+</div>
+<h2 id="bloco-8-tom-e-linguagem">Bloco 8 · Tom e linguagem</h2>
+<div class="bloco">
+<div class="bloco-prompt">
+<pre class="prompt"><code>- Tom e Linguagem: Didático, explicando as fontes e dados que levaram a oportunidade a ser considerada</code></pre>
+</div>
+<div class="bloco-just">
+<p><span class="tag">Estrutura-base · apoio à leitura crítica</span></p>
+<p>O tom didático pede que a resposta explique as fontes e os dados que levaram a cada oportunidade.</p>
+<p><strong>Efeito esperado:</strong> o raciocínio fica exposto, o que facilita a auditoria: um número explicado é mais fácil de rastrear e de conferir do que um número solto.</p>
+</div>
+</div>
+<h2 id="bloco-9-restrições-absolutas">Bloco 9 · Restrições absolutas</h2>
+<div class="bloco">
+<div class="bloco-prompt">
+<pre class="prompt"><code>- Restrições Absolutas:
+  - Não invente dados. Todo número deve vir com fonte, ano, recorte geográfico (Brasil, DF ou RA) e o que mede (faturamento nominal ou volume; dado observado ou projeção; valor anunciado ou realizado).
+  - Fontes aceitas: primárias ou institucionais, como IBGE, IPEDF/Codeplan (PDAD, dados por RA), SEBRAE, Banco Central, Receita Federal, ABIP, órgãos do GDF e legislação. Notícia só vale se indicar a fonte original.
+  - Sem dado confiável, escreva &quot;SEM DADO&quot;. Não estime nem arredonde para preencher o campo.
+  - Proibido justificar potencial por seguidores, curtidas, engajamento ou visibilidade em redes sociais. Potencial só se justifica por receita, margem, ticket médio, frequência de compra ou clientes pagantes.
+  - Não use jargões sem explicar. Proibido emojis.
+&lt;/variaveis&gt;</code></pre>
+</div>
+<div class="bloco-just">
+<p><span class="tag">Leitura crítica de dado (Aula 4) · Métrica de atenção × métrica de negócio (Aula 6)</span></p>
+<p><strong>Leitura crítica de dado.</strong> As três primeiras linhas tornam os dados verificáveis. Cada número precisa de fonte, ano, recorte geográfico e do que mede, com atenção aos dois erros prováveis neste recorte: dado nacional usado como se valesse para uma RA, e faturamento nominal lido como crescimento de vendas. A lista de fontes aceitas exclui notícia sem fonte original. Sem dado confiável, a IA deve escrever “SEM DADO” em vez de estimar.</p>
+<p><strong>Métrica de atenção × métrica de negócio.</strong> Em alimentação é comum justificar potencial pelo Instagram. A quarta linha proíbe esse argumento e só aceita receita, margem, ticket médio, frequência de compra ou clientes pagantes. Se alguma IA o usasse, seria registrado como achado.</p>
+<p><strong>Efeito esperado:</strong> números auditáveis e uma saída honesta para a falta de dado, em vez de invenção. <a href="index.html#leitura-critica">Justificativas completas</a>.</p>
+</div>
+</div>
+<h2 id="bloco-10-processo-de-pensamento-crítico">Bloco 10 · Processo de pensamento crítico</h2>
+<div class="bloco">
+<div class="bloco-prompt">
+<pre class="prompt"><code>---
+
+# PROCESSO DE PENSAMENTO CRÍTICO
+Antes de gerar a resposta final, faça uma pausa interna e execute os seguintes passos de verificação (você deve incluir essa análise inicial em uma tag &lt;analise_previa&gt;):
+1. O problema central está claramente definido? Se houver ambiguidades ou informações faltando nas variáveis, aponte-as.
+2. Quais são os cenários em que a solução proposta pode falhar ou perder validade?
+3. Separe mentalmente: Fatos comprovados vs. Hipóteses vs. Opiniões. Todo fato precisa cumprir o padrão de evidência das Restrições Absolutas.
+4. Liste as tendências do setor de panificação no DF e só depois derive delas as oportunidades. Nenhuma tendência pode aparecer como oportunidade.
+5. Informe sua data de corte de conhecimento e se consultou a internet para esta resposta.</code></pre>
+</div>
+<div class="bloco-just">
+<p><span class="tag">Tendência × oportunidade (Aula 4) · Leitura crítica de dado (Aula 4)</span></p>
+<ul>
+<li><strong>Passo 3:</strong> a separação entre fatos, hipóteses e opiniões remete ao mesmo padrão de evidência das Restrições Absolutas.</li>
+<li><strong>Passo 4:</strong> obriga a listar as tendências primeiro e só depois derivar delas as oportunidades. Nenhuma tendência pode aparecer como oportunidade.</li>
+<li><strong>Passo 5:</strong> pede a data de corte do conhecimento e se a IA consultou a internet. Como o horizonte é 2026–2030 e os modelos têm data de corte, essa informação ajuda a explicar a divergência entre as respostas e entra no <a href="protocolo.html">protocolo</a>.</li>
+</ul>
+<p><strong>Efeito esperado:</strong> uma análise prévia visível, na tag <code>&lt;analise_previa&gt;</code>, que mostra as lacunas e as premissas antes da resposta final.</p>
+</div>
+</div>
+<h2 id="bloco-11-diretrizes-da-tarefa">Bloco 11 · Diretrizes da tarefa</h2>
+<div class="bloco">
+<div class="bloco-prompt">
+<pre class="prompt"><code>---
+
+# DIRETRIZES DA TAREFA
+Gere o entregável final garantindo que ele:
+1. Seja estritamente focado no Objetivo Final e 100% acionável.
+2. Evite suposições não verificáveis ou otimismo ingênuo (&quot;achismos&quot;).
+3. Indique claramente os riscos, limitações e pontos cegos da abordagem recomendada.
+4. Respeite rigorosamente todas as restrições de tamanho, linguagem e exclusões listadas nas &lt;variaveis&gt;.
+5. Aplique os Critérios de corte a cada candidata antes de incluí-la, e mostre as descartadas.</code></pre>
+</div>
+<div class="bloco-just">
+<p><span class="tag">Checklist final de Dornelas (Aula 5)</span></p>
+<p>Os itens 1 a 4 são estrutura-base: foco no objetivo, nada de achismo, riscos explícitos e respeito às restrições.</p>
+<p>O <strong>item 5</strong> repete o filtro do bloco 6 como instrução de processo: aplicar o checklist a cada candidata antes de incluí-la e mostrar as descartadas.</p>
+<p><strong>Efeito esperado:</strong> o filtro deixa de ser só um critério e passa a ser um passo obrigatório, com rastro visível na seção de descartadas.</p>
+</div>
+</div>
+<h2 id="bloco-12-formato-da-resposta">Bloco 12 · Formato da resposta</h2>
+<div class="bloco">
+<div class="bloco-prompt">
+<pre class="prompt"><code># FORMATO DA RESPOSTA
+Sua resposta final deve seguir obrigatoriamente esta estrutura de tópicos:
+
+### 1. Tendências do setor
+(Movimentos gerais da panificação no DF que orientaram a busca. Não são oportunidades. Máximo de 5 linhas)
+</code></pre>
+</div>
+<div class="bloco-just">
+<p><span class="tag">Tendência × oportunidade (Aula 4)</span></p>
+<p>A seção 1 isola as tendências, limitadas a cinco linhas e declaradas como “não são oportunidades”. Com isso, a confusão entre as duas, se acontecer, fica visível.</p>
+</div>
+</div>
+<div class="bloco">
+<div class="bloco-prompt">
+<pre class="prompt"><code>### 2. Oportunidades aprovadas
+(Até 3, da mais à menos defensável. Para cada uma, todos os campos abaixo, nesta ordem)
+
+Oportunidade N — [nome] | RA: [nome da RA]
+- Resumo executivo: máximo de 5 linhas, direto ao ponto
+- Tendência de origem: em uma linha
+- Quem exatamente tem esse problema? Cliente nomeável, não &quot;os moradores&quot; ou &quot;as empresas&quot;
+- Quanto dói? O que o problema custa ao cliente em dinheiro, tempo ou risco
+- Demanda de mercado (1º M): como o cliente é alcançado e em quanto tempo o custo de captação se recupera
+- Tamanho e estrutura do mercado (2º M): tamanho na RA (R$ e nº de clientes), crescimento, concorrentes diretos, mercado fragmentado ou consolidado, barreiras de entrada
+- Por que você, e não o incumbente? Diferenciação que um concorrente estabelecido não copia em três meses
+- Modelo de negócio: quem paga, com que dinheiro, por quê e a que custo (investimento inicial dentro de R$ 500 mil e custos fixos mensais)
+- Canal digital: enquadramento em um dos cinco modelos de negócio na web (intermediação, propaganda, mercado virtual, empresarial, redes sociais), assinatura, ou &quot;não se aplica&quot;. Se depender de plataforma de terceiros, informe a comissão e quem fica com o cliente
+- Análise de margem (3º M): margem bruta e ponto de equilíbrio estimados, com premissas explícitas, ou SEM DADO
+- Por que agora, e não em 2020 ou 2035?
+- Caminho para operar sem os donos em até 10 anos
+- Checklist de corte: (a) a (e), cada um com SIM e uma linha de justificativa
+- Evidências: tabela com número | fonte | ano | recorte geográfico | o que mede</code></pre>
+</div>
+<div class="bloco-just">
+<p><span class="tag">Cinco perguntas (Aula 4) · 3Ms (Aula 5) · Modelo de negócio, modelos na web (Aula 6) · Checklist (Aula 5) · Leitura crítica (Aula 4)</span></p>
+<p>Campos fixos, na mesma ordem, para que as três respostas fiquem comparáveis. Cada campo carrega um instrumento:</p>
+<ul>
+<li><strong>Cinco perguntas de triagem</strong>, com a mesma redação: “Quem exatamente tem esse problema?”, “Quanto dói?”, “Por que você, e não o incumbente?”, “Por que agora?”; e “quem paga, com que dinheiro” dentro do Modelo de negócio.</li>
+<li><strong>3Ms</strong>: três campos identificados como 1º, 2º e 3º M; o 2º pede o tamanho na RA, e não no país.</li>
+<li><strong>Modelo de negócio</strong>: quem paga, por quê e a que custo, dentro dos R$ 500 mil.</li>
+<li><strong>Canal digital</strong>: enquadramento nos cinco modelos na web, assinatura ou “não se aplica”, com comissão e quem fica com o cliente.</li>
+<li><strong>Checklist de corte</strong>: as cinco perguntas, cada uma com SIM e justificativa.</li>
+<li><strong>Evidências</strong>: tabela com número, fonte, ano, recorte geográfico e o que mede.</li>
+</ul>
+</div>
+</div>
+<div class="bloco">
+<div class="bloco-prompt">
+<pre class="prompt"><code>### 3. Oportunidades descartadas
+(Uma linha cada: nome e a pergunta do checklist em que falhou)
+
+### 4. Riscos, Limitações e Pontos Cegos
+(O que pode dar errado, quais são as premissas frágeis, o que depende de condição externa como juros e crédito, e quais campos ficaram como SEM DADO)
+
+### 5. Próximos Passos Recomendados
+(Plano de ação claro, em tópicos, ordenado por prioridade, começando pela oportunidade que você priorizaria e por quê)</code></pre>
+</div>
+<div class="bloco-just">
+<p><span class="tag">Checklist final de Dornelas (Aula 5)</span></p>
+<p>A seção 3 mostra as descartadas, com a pergunta do checklist em que falharam: é onde se vê o filtro funcionando.</p>
+<p>As seções 4 e 5 pedem riscos (incluindo os campos que ficaram SEM DADO) e próximos passos, começando pela oportunidade priorizada e por quê.</p>
+</div>
+</div>
+<h2 id="mapa-dos-instrumentos-no-prompt">Mapa dos instrumentos no prompt</h2>
+<div class="tabela larga">
+<div class="tabela"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Instrumento</th>
+<th>Aula</th>
+<th>Onde entra no prompt</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tendência × oportunidade</td>
+<td>4</td>
+<td>Bloco 3 (definição de oportunidade), bloco 10 (passo 4), bloco 12 (seção 1 do formato)</td>
+</tr>
+<tr class="even">
+<td>Cinco perguntas de triagem</td>
+<td>4</td>
+<td>Bloco 12: campos fixos de cada oportunidade, com a mesma redação</td>
+</tr>
+<tr class="odd">
+<td>Leitura crítica de dado de mercado</td>
+<td>4</td>
+<td>Bloco 9 (Restrições Absolutas) e campo Evidências do bloco 12</td>
+</tr>
+<tr class="even">
+<td>Checklist final de Dornelas</td>
+<td>5</td>
+<td>Bloco 6 (critérios de corte), bloco 11 (item 5), bloco 12 (seções 2 e 3)</td>
+</tr>
+<tr class="odd">
+<td>3Ms</td>
+<td>5</td>
+<td>Bloco 12: campos 1º, 2º e 3º M</td>
+</tr>
+<tr class="even">
+<td>Critérios de alto e baixo potencial (em parte)</td>
+<td>5</td>
+<td>Bloco 7 (critérios de potencial, com proibição dos patamares numéricos)</td>
+</tr>
+<tr class="odd">
+<td>Modelo de negócio</td>
+<td>6</td>
+<td>Bloco 12: campo Modelo de negócio</td>
+</tr>
+<tr class="even">
+<td>Cinco modelos de negócio na web</td>
+<td>6</td>
+<td>Bloco 12: campo Canal digital</td>
+</tr>
+<tr class="odd">
+<td>Métrica de atenção × métrica de negócio</td>
+<td>6</td>
+<td>Bloco 9: uma linha das Restrições Absolutas</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+</article>
+<nav class="pager" aria-label="Paginação"><a class="ant" href="index.html"><small>Anterior</small>Abertura e régua analítica</a><a class="prox" href="protocolo.html"><small>Próxima</small>Protocolo de teste</a></nav>
+</main>
+<footer class="rodape">
+  <p>Giovani Machado Rigon · Matrícula 16/0070686 · Criação de Negócios (ADM0150) · Semestre 2026/2 · Universidade de Brasília</p>
+  <p>As respostas das IAs aparecem apenas nos anexos, como objeto de estudo. Resposta de IA não é fonte.</p>
+</footer>
+</body>
+</html>

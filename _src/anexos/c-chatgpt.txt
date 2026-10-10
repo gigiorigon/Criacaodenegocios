@@ -1,0 +1,201 @@
+Data de corte: 9 de outubro de 2026 · Pesquisa na internet realizada · Recorte geográfico: Distrito Federal, com prioridade para regiões administrativas fora do Plano Piloto.
+
+### Análise de viabilidade de negócios de panificação no Distrito Federal
+
+### Conclusão executiva
+
+A recomendação é não comprometer os R$ 500 mil com a abertura imediata de uma padaria tradicional. A primeira etapa deve ser identificar um problema comercial comprovado e clientes dispostos a pagar por uma solução superior à que já utilizam.
+
+A pesquisa encontrou bases institucionais úteis para selecionar regiões e compreender o setor, mas não encontrou evidência suficiente para confirmar, sem investigação comercial adicional, três oportunidades que atendam integralmente aos cinco critérios de corte de Dornelas. Por isso, não vou classificar hipóteses de negócio como oportunidades aprovadas apenas porque parecem plausíveis.
+
+### Análise prévia
+
+### 1\. Problema central e lacunas de informação
+
+O desafio não é simplesmente descobrir onde há demanda por pão. É encontrar um grupo identificável de compradores com um problema não resolvido, capacidade de pagamento e uma razão concreta para trocar de fornecedor ou comprar de um novo estabelecimento.
+
+Faltam dados públicos suficientemente específicos sobre faturamento de padarias por RA, preços de aluguel comercial comparáveis, margens efetivamente praticadas, número de concorrentes ativos por microrregião e disposição dos compradores a pagar por uma alternativa.
+
+### 2\. Cenários de falha
+
+* Uma região populosa pode já ter oferta suficiente de padarias.
+
+* Um aluguel aparentemente barato pode vir acompanhado de pouco movimento comercial ou custos de adaptação elevados.
+
+* Uma padaria pode vender bem e ainda assim não gerar caixa suficiente por desperdício, folha de pagamento, energia e capital de giro.
+
+* Uma operação dependente dos proprietários pode ser lucrativa no início, mas não conseguir financiar uma equipe de gestão.
+
+    ### 3\. Fatos, hipóteses e opiniões
+
+    Fatos: dados populacionais e socioeconômicos publicados pelo IPEDF, indicadores setoriais da ABIP e referências de planejamento do Sebrae.
+
+Hipóteses: existência de compradores insatisfeitos, falhas de abastecimento, oportunidades de diferenciação e disposição a pagar por conveniência ou padronização. Precisam ser verificadas em campo.
+
+Opinião estratégica: com capital limitado a R$ 500 mil, uma operação enxuta, com demanda contratada ou recorrente comprovada antes de investir na estrutura completa, tende a limitar melhor o risco.
+
+### 4\. Tendências e oportunidades são coisas diferentes
+
+Crescimento setorial, produção artesanal, conveniência, digitalização e vendas para empresas são pontos de partida para a investigação. Nenhum deles comprova, isoladamente, um problema comercial específico.
+
+### 5\. Data de corte e fontes
+
+A pesquisa na internet foi realizada em 9 de outubro de 2026. Entre as fontes consultadas estão o IPEDF, a ABIP e o Sebrae. Os dados encontrados não permitem afirmar que existe demanda insatisfeita em uma RA específica sem pesquisa primária.
+
+### 1\. Tendências do setor
+
+* Relevância econômica da panificação: a ABIP disponibiliza indicadores nacionais de faturamento, fluxo de clientes, vendas de produção própria e emprego, inclusive séries históricas. Os dados nacionais não demonstram, por si, crescimento ou rentabilidade no DF.
+
+* Diferenças territoriais: população, renda e características urbanas variam entre as RAs, o que exige adaptar o formato da padaria ao público local.
+
+* Diversidade de formatos comerciais: varejo de bairro, produção para revenda, encomendas e fornecimento para empresas são modelos a investigar, não oportunidades comprovadas.
+
+* Pressão sobre os custos: matérias-primas, energia, pessoal, aluguel e desperdício precisam ser avaliados por unidade de produto; a referência genérica de mercado não substitui cotações locais.
+
+### 2\. Oportunidades aprovadas
+
+Quantidade aprovada: zero.
+
+Essa conclusão não significa que o mercado seja ruim. Significa que a evidência pública localizada não permite comprovar todos os critérios de corte exigidos, especialmente a existência de um problema não resolvido, a vantagem competitiva concreta e a viabilidade comercial demonstrada.
+
+Há, entretanto, três candidatas que merecem investigação. Nenhuma deve receber investimento relevante antes de passar pelos testes descritos na seção 5.
+
+### Referência territorial para a investigação
+
+A pesquisa do IPEDF sobre a UPT Oeste apresenta dados históricos para quatro RAs que podem orientar a seleção inicial de locais. São referências de contexto, não provas de demanda comercial atual.
+
+| RA         | População urbana publicada | Renda domiciliar média publicada | Interpretação                                                                       |
+| ---------- | -------------------------- | -------------------------------- | ----------------------------------------------------------------------------------- |
+| Ceilândia  | 430.293                    | R$ 3.136                         | Base populacional relevante para testar demanda de bairro e fornecimento comercial  |
+| Samambaia  | 231.893                    | R$ 2.542                         | Vale testar um modelo de baixo custo e preços acessíveis                            |
+| Taguatinga | 205.689                    | R$ 5.425                         | Vale investigar compradores comerciais e consumidores com maior capacidade de gasto |
+| Brazlândia | 50.384                     | R$ 3.319                         | Pode ser avaliada para uma operação de menor escala                                 |
+
+Fonte: IPEDF/Codeplan, apresentação da PDAD da UPT Oeste. Os números são dados históricos da pesquisa, e não estimativas de 2026. A renda domiciliar média não equivale à renda individual. Os valores não devem ser tratados como valores atuais corrigidos pela inflação.
+
+### Por que não há um tamanho de mercado em reais?
+
+Não foi localizada uma base confiável que informe simultaneamente, por RA, o faturamento das padarias, o número de compradores efetivamente acessíveis e a participação dos concorrentes. Portanto, esses campos ficam como SEM DADO. Multiplicar a população por um consumo médio nacional produziria uma estimativa indireta, não uma medição do mercado local, e poderia dar uma falsa impressão de precisão.
+
+Pensou por 12s
+
+### 3\. Oportunidades descartadas
+
+As três candidatas abaixo foram descartadas da lista de oportunidades aprovadas, não necessariamente do mercado. O motivo é a falta de evidência para responder SIM a todos os critérios.
+
+### 1\. Produção de pães congelados ou pré-assados para estabelecimentos comerciais
+
+RA candidata: Ceilândia
+
+Problema a investigar: lanchonetes, cafeterias, pequenos mercados e restaurantes podem ter dificuldades para manter padrão de qualidade, disponibilidade e custo de produção.
+
+Falha no checklist: (a) existência de um problema concreto e (c) clientes com disposição comprovada a pagar por uma solução superior.
+
+Por que investigar: a operação poderia concentrar a produção e entregar aos estabelecimentos, reduzindo a necessidade de cada cliente produzir determinados itens. Entretanto, não há evidência localizada de que esses compradores estejam insatisfeitos com seus fornecedores atuais, nem de que o volume contratado cobriria os custos de produção e distribuição.
+
+### 2\. Padaria de bairro com produção enxuta e encomendas programadas
+
+RA candidata: Samambaia
+
+Problema a investigar: consumidores de uma microrregião podem enfrentar indisponibilidade de determinados produtos ou dificuldade para comprar itens específicos em horários convenientes.
+
+Falha no checklist: (a) problema local comprovado e (d) custo de aquisição de clientes e retorno comercial demonstrados.
+
+Por que investigar: o formato pode limitar o desperdício ao produzir com base em encomendas e histórico de vendas. Mas não há evidência de que exista uma lacuna de oferta no endereço que seria escolhido, nem de que os pedidos antecipados seriam suficientes para sustentar os custos fixos.
+
+### 3\. Padaria especializada em fornecimento recorrente para empresas
+
+RA candidata: Taguatinga
+
+Problema a investigar: empresas, clínicas, escolas privadas e organizadores de eventos podem precisar de entregas recorrentes de pães, lanches e kits para reuniões.
+
+Falha no checklist: (c) carteira de compradores identificada e (e) janela de oportunidade comprovadamente aberta.
+
+Por que investigar: pedidos programados podem facilitar o planejamento da produção. O ponto cego é que contratos corporativos podem exigir preços competitivos, prazos de pagamento, entregas pontuais e capacidade de atendimento que uma empresa nova ainda não possui.
+
+Nenhuma dessas candidatas deve ser promovida a oportunidade aprovada antes de comprovar o problema e a vantagem competitiva. Não há fundamento para atribuir notas quantitativas de potencial ou declarar que uma delas é a mais defensável apenas com os dados disponíveis.
+
+### 4\. Riscos, limitações e pontos cegos
+
+### Principais riscos
+
+* Concorrência local: não basta contar padarias no DF. É necessário identificar quem atende o mesmo público, em qual raio de entrega, com quais preços, produtos e horários.
+
+* Custos de implantação: o material do Sebrae sobre padarias apresenta referências de investimento, mas elas não são orçamento de implantação em Brasília em 2026. Equipamentos, reforma, exaustão, instalações elétricas, adequação sanitária e capital de giro precisam de cotações específicas.
+
+* Capital insuficiente: os R$ 500 mil precisam cobrir implantação e capital de giro. Gastar quase tudo em equipamentos e reforma pode deixar a operação sem caixa para comprar insumos e pagar pessoal.
+
+* Dependência dos donos: produção, compras, controle de qualidade e vendas concentrados nos proprietários tornam a expansão difícil. A operação precisa de procedimentos documentados, indicadores e responsáveis substitutos.
+
+* Juros e crédito: uma operação financiada pode ficar inviável se o custo da dívida consumir a margem. O cenário financeiro deve ser testado com recursos próprios e com eventual financiamento, sem assumir crédito barato.
+
+* Mudanças até a abertura: os dados históricos das RAs não garantem que o perfil de demanda, o custo dos imóveis ou a concorrência permaneçam iguais entre 2026 e 2030.
+
+### Campos que permanecem como SEM DADO
+
+| Campo                                                       | Situação                |
+| ----------------------------------------------------------- | ----------------------- |
+| Faturamento total de padarias por RA                        | SEM DADO                |
+| Número de clientes pagantes potenciais por modelo           | SEM DADO                |
+| Número de concorrentes diretos por microrregião             | SEM DADO                |
+| Aluguel comercial comparável por RA e tipo de imóvel        | SEM DADO                |
+| Margem bruta efetiva dos concorrentes locais                | SEM DADO                |
+| Custo de aquisição de um cliente comercial                  | SEM DADO                |
+| Prazo de recuperação desse custo                            | SEM DADO                |
+| Disposição a pagar dos clientes potenciais                  | SEM DADO                |
+| Crescimento do mercado de panificação especificamente no DF | SEM DADO nesta pesquisa |
+
+O IPEDF fornece dados úteis para a escolha territorial; a ABIP disponibiliza indicadores setoriais nacionais; e o Sebrae fornece orientações de estruturação e viabilidade. Essas fontes ajudam a formular hipóteses, mas não substituem pesquisa de campo e cotações reais.
+
+### 5\. Próximos Passos Recomendados
+
+A prioridade é testar o modelo de fornecimento comercial em Ceilândia antes de investir em uma padaria completa. Isso é uma prioridade de investigação, não uma oportunidade já validada.
+
+* Testar a hipótese de fornecimento B2B em Ceilândia
+
+    Identifique lanchonetes, cafeterias, pequenos mercados e restaurantes independentes. Entreviste os responsáveis por compras e produção para descobrir quais itens compram de terceiros, com que frequência, de quem e quais problemas enfrentam.
+
+    Não pergunte apenas se comprariam seus produtos. Solicite preços e volumes atuais, registros de compras, frequência de falta de mercadoria e condições de pagamento.
+
+* Mapear concorrentes e fornecedores reais
+
+    Levante os fornecedores utilizados pelos potenciais clientes, seus produtos, preços, pedido mínimo, prazo de entrega e condições comerciais. Consulte o cadastro de CNPJ por atividade econômica e valide os estabelecimentos ativos por contato direto.
+
+    O cadastro formal, sozinho, não comprova que uma empresa esteja operando ou disputando o mesmo mercado.
+
+* Vender antes de montar a estrutura completa
+
+    Negocie pedidos-piloto pagos, respeitando as exigências sanitárias e de produção. A fabricação inicial pode ser testada por meio de uma estrutura regularizada contratada, desde que a qualidade, os custos e a responsabilidade operacional estejam claramente definidos.
+
+    O objetivo é medir recompra, margem por produto, perdas, custo de entrega e inadimplência. Interesse verbal não deve ser tratado como demanda comprovada.
+
+* Construir o modelo financeiro com dados observados
+
+    Solicite pelo menos cotações de equipamentos, insumos, aluguel, energia, pessoal, embalagens, transporte e adequações. Separe investimento inicial, despesas fixas, custos variáveis e capital de giro.
+
+    O Sebrae explica que o ponto de equilíbrio em faturamento pode ser calculado dividindo os custos fixos pelo índice da margem de contribuição.
+
+    A margem de contribuição é a parcela da receita que sobra após os custos variáveis; é ela que paga os custos fixos e, depois disso, permite gerar lucro.
+
+* Comparar as três candidatas antes de decidir a implantação
+
+    Só avance quando houver compradores identificados, evidência de compras ou pedidos-piloto, custos cotados e uma vantagem que possa ser demonstrada. Se o modelo B2B falhar, investigue a padaria de encomendas em Samambaia e o fornecimento corporativo em Taguatinga com o mesmo rigor.
+
+* Desenhar desde o início uma empresa que não dependa dos donos
+
+    Documente receitas e padrões de produção, estabeleça controle de estoque e perdas, crie rotinas de compras, defina indicadores de qualidade e margem e treine responsáveis por produção, vendas e operação. A delegação deve ser financiada pela margem real, não por uma projeção otimista.
+
+### Critério final de decisão
+
+Antes de comprometer o capital, a candidata precisa responder SIM, com evidência, às cinco perguntas de Dornelas:
+
+| Critério                       | Evidência mínima para aprovação                                                                                  |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
+| (a) Problema real              | Compradores relatam e demonstram um problema concreto                                                            |
+| (b) Solução adequada           | Produto testado resolve o problema sem comprometer qualidade ou custo                                            |
+| (c) Clientes identificáveis    | Lista de compradores potenciais com responsável, necessidade e volume                                            |
+| (d) Marketing e vendas viáveis | Canal comercial, custo de aquisição e retorno sustentados por dados                                              |
+| (e) Janela aberta              | Clientes insatisfeitos ou demanda não atendida, sem vantagem decisiva dos concorrentes que inviabilize a entrada |
+
+Minha recomendação é não abrir uma padaria agora. Primeiro, prove que um grupo de compradores pagará de forma recorrente por algo que os fornecedores atuais não entregam bem. A produção para terceiros é uma hipótese interessante para testar porque permite investigar demanda antes de assumir todos os custos de um ponto de varejo. Se não houver recompra, margem suficiente e capital de giro sustentável, descarte o modelo antes de imobilizar os R$ 500 mil.
+
