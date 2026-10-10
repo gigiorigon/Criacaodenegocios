@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" role="img" aria-label="Três tigelas de massa crescendo, A, B e C">
+<style>
+.blob{fill:#fff;opacity:.08}
+.d{transform-box:fill-box;transform-origin:50% 100%;animation:proof 3.6s ease-in-out infinite}
+.d2{animation-delay:.6s}.d3{animation-delay:1.2s}
+@keyframes proof{0%,100%{transform:scale(.8,.6)}50%{transform:scale(1,1)}}
+.b{transform-box:fill-box;transform-origin:50% 100%;animation:bob 3.6s ease-in-out infinite}
+.b2{animation-delay:.6s}.b3{animation-delay:1.2s}
+@keyframes bob{50%{transform:translateY(-3px)}}
+.p circle{fill:#fff;opacity:0;animation:pf 4s linear infinite}
+.p circle:nth-child(2){animation-delay:1s}.p circle:nth-child(3){animation-delay:2s}.p circle:nth-child(4){animation-delay:3s}
+@keyframes pf{0%{opacity:0;transform:translateY(0)}25%{opacity:.8}100%{opacity:0;transform:translateY(-50px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<circle class="blob" cx="200" cy="170" r="140"/>
+<g font-family="system-ui,Segoe UI,Roboto,Arial,sans-serif" font-weight="800" font-size="26" text-anchor="middle">
+<g class="b"><ellipse class="d" cx="82" cy="210" rx="46" ry="40" fill="#f6e7c8"/><path d="M30 206h104c0 40-22 64-52 64s-52-24-52-64z" fill="#fff"/><rect x="26" y="200" width="112" height="12" rx="6" fill="#e3ecf6"/><text x="82" y="252" fill="#133e79">A</text></g>
+<g class="b b2"><ellipse class="d d2" cx="200" cy="210" rx="46" ry="40" fill="#f6e7c8"/><path d="M148 206h104c0 40-22 64-52 64s-52-24-52-64z" fill="#fff"/><rect x="144" y="200" width="112" height="12" rx="6" fill="#e3ecf6"/><text x="200" y="252" fill="#133e79">B</text></g>
+<g class="b b3"><ellipse class="d d3" cx="318" cy="210" rx="46" ry="40" fill="#f6e7c8"/><path d="M266 206h104c0 40-22 64-52 64s-52-24-52-64z" fill="#fff"/><rect x="262" y="200" width="112" height="12" rx="6" fill="#e3ecf6"/><text x="318" y="252" fill="#133e79">C</text></g>
+</g>
+<rect x="20" y="276" width="360" height="8" rx="4" fill="#0d2c57" opacity=".35"/>
+<path d="M200 70v40M182 92l18 18 18-18" fill="none" stroke="#5fc28a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<g class="p"><circle cx="82" cy="160" r="4"/><circle cx="200" cy="160" r="3"/><circle cx="318" cy="160" r="4"/><circle cx="140" cy="150" r="3"/></g>
+</svg>

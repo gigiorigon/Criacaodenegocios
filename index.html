@@ -9,7 +9,9 @@
 <link rel="stylesheet" href="assets/estilo.css">
 </head>
 <body class="main">
+<script>document.documentElement.classList.add("js")</script>
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<div class="progresso" aria-hidden="true"><span></span></div>
 <header class="topo">
   <div class="topo-in">
     <a class="marca" href="index.html">
@@ -27,9 +29,22 @@
   </details>
   <nav class="menu-largo" aria-label="Seções do site"><ul><li><a href="index.html" class="ativo" aria-current="page">Abertura</a></li><li><a href="prompt-mestre.html">Prompt-mestre</a></li><li><a href="protocolo.html">Protocolo</a></li><li class="grupo"><span>Síntese auditada</span><ul><li><a href="auditoria-rastreabilidade.html">Rastreabilidade</a></li><li><a href="auditoria-verificacao.html">Fontes primárias</a></li><li><a href="auditoria-regua.html">Aplicação da régua</a></li></ul></li><li><a href="conclusao.html">Conclusão</a></li><li><a href="anexos.html">Anexos</a></li></ul></nav>
 </header>
+<section class="faixa faixa-main">
+  <span class="bolha b1" aria-hidden="true"></span><span class="bolha b2" aria-hidden="true"></span><span class="bolha b3" aria-hidden="true"></span>
+  <div class="faixa-in">
+    <div class="faixa-txt">
+      <p class="kicker">Estudo de caso · ADM0150 · 2026/2</p>
+      <h1>Panificação no DF: oportunidades com uma cadeia de IAs</h1>
+      <p class="faixa-sub">Um prompt com a régua das Aulas 4, 5 e 6, três IAs, uma quarta IA que sintetiza e uma auditoria que confere tudo na fonte.</p>
+      <p class="cta"><a class="btn btn-claro" href="prompt-mestre.html">Ver o prompt-mestre</a><a class="btn btn-contorno" href="conclusao.html">Ir para a conclusão</a></p>
+    </div>
+    <div class="faixa-img"><img src="assets/img/forno.svg" alt="" width="400" height="320"></div>
+  </div>
+  <svg class="onda" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path class="onda-v" d="M-80 40c260 40 500 40 800 0s500-40 800 0v40H-80z"/><path class="onda-f" d="M0 56c240-32 480-32 720 0s480 32 720 0v24H0z"/></svg>
+</section>
+<div class="marquee" aria-label="Instrumentos das Aulas 4, 5 e 6 usados no prompt"><ul><li>Tendência × oportunidade</li><li>Cinco perguntas de triagem</li><li>Leitura crítica de dado</li><li>Checklist de Dornelas</li><li>3Ms</li><li>Alto e baixo potencial</li><li>Modelo de negócio</li><li>Cinco modelos na web</li><li>Atenção × negócio</li></ul><ul aria-hidden="true"><li>Tendência × oportunidade</li><li>Cinco perguntas de triagem</li><li>Leitura crítica de dado</li><li>Checklist de Dornelas</li><li>3Ms</li><li>Alto e baixo potencial</li><li>Modelo de negócio</li><li>Cinco modelos na web</li><li>Atenção × negócio</li></ul></div>
 <main id="conteudo">
 <article class="conteudo">
-<h1>Abertura e régua analítica</h1>
 <div class="ident">
 <p>
 <span>Aluno</span><strong>Giovani Machado Rigon</strong>
@@ -48,14 +63,36 @@
 <h2 id="objetivo-do-estudo">Objetivo do estudo</h2>
 <p>Este estudo testa um método de detecção de oportunidades de negócio em que quatro inteligências artificiais trabalham em cadeia, e examina onde essa cadeia falha.</p>
 <p>O recorte é o mercado de <strong>panificação (padarias) no Distrito Federal</strong>, em regiões administrativas no entorno do Plano Piloto com custo de operação menor, para um negócio de pequeno ou médio porte, com capital de até <strong>R$ 500 mil</strong> e abertura entre <strong>2026 e 2030</strong>.</p>
-<p>O caminho seguido tem quatro passos:</p>
-<ol type="1">
-<li><strong>Prompt-mestre.</strong> Escrevi um único prompt que carrega os instrumentos de avaliação de oportunidade das Aulas 4, 5 e 6 (<a href="prompt-mestre.html">página 2</a>).</li>
-<li><strong>Três IAs.</strong> Enviei o mesmo prompt, sem adaptação, ao Gemini, ao DeepSeek e ao ChatGPT (<a href="protocolo.html">página 3</a>).</li>
-<li><strong>Quarta IA.</strong> Submeti as três respostas a uma quarta IA, encarregada apenas de sintetizá-las, com um prompt de síntese próprio (<a href="protocolo.html#prompt-de-síntese">página 3</a>).</li>
-<li><strong>Auditoria.</strong> Tratei a síntese como objeto de investigação: rastreei suas afirmações até as respostas originais, confrontei dados com fontes primárias e apliquei a régua por conta própria (<a href="auditoria-rastreabilidade.html">páginas 4.1 a 4.3</a>).</li>
-</ol>
+<p>O caminho seguido tem quatro passos, como uma receita:</p>
+<div class="passos">
+<a class="passo" href="prompt-mestre.html"><span class="passo-img"><img src="assets/img/receita.svg" alt="" loading="lazy"></span><span class="passo-n">1</span><strong>Prompt-mestre</strong><span>Um único prompt que carrega os instrumentos de avaliação de oportunidade das Aulas 4, 5 e 6.</span></a>
+<a class="passo" href="protocolo.html"><span class="passo-img"><img src="assets/img/tigelas.svg" alt="" loading="lazy"></span><span class="passo-n">2</span><strong>Três IAs</strong><span>O mesmo prompt, sem adaptação, no Gemini (A), no DeepSeek (B) e no ChatGPT (C).</span></a>
+<a class="passo" href="protocolo.html#prompt-de-síntese"><span class="passo-img"><img src="assets/img/forno.svg" alt="" loading="lazy"></span><span class="passo-n">3</span><strong>Quarta IA</strong><span>O Claude (D) sintetiza as três respostas, com um prompt de síntese próprio.</span></a>
+<a class="passo" href="auditoria-rastreabilidade.html"><span class="passo-img"><img src="assets/img/lupa.svg" alt="" loading="lazy"></span><span class="passo-n">4</span><strong>Auditoria</strong><span>Rastreio a síntese até as respostas, confronto dados com fontes primárias e aplico a régua por conta própria.</span></a>
+</div>
 <h2 id="resultado-em-uma-frase">Resultado em uma frase</h2>
+<div class="numeros">
+<div class="info">
+<p>16</p>
+<p>afirmações da síntese auditadas</p>
+</div>
+<div class="warn">
+<p>4</p>
+<p>distorcidas em certeza ou sentido</p>
+</div>
+<div class="bad">
+<p>2</p>
+<p>órfãs, sem origem nas três IAs</p>
+</div>
+<div class="info">
+<p>3</p>
+<p>ressalvas suprimidas</p>
+</div>
+<div class="ok">
+<p>1 de 7</p>
+<p>dados confirmados por inteiro na fonte primária</p>
+</div>
+</div>
 <div class="caixa destaque">
 <p>A síntese manteve os números, mas perdeu as dúvidas: das 16 afirmações auditadas, 4 foram distorcidas em certeza ou sentido, 2 são órfãs e 3 ressalvas das próprias IAs sumiram. Na fonte primária, só 1 de 7 afirmações se confirmou por inteiro, e os dados por RA das três IAs têm edição, ano ou RA trocados. Pela régua das Aulas 5 e 6, nenhuma oportunidade passa nas cinco perguntas hoje; a única que eu defenderia é a panificação sem glúten dedicada, vendida primeiro a cafeterias e restaurantes.</p>
 </div>
@@ -276,5 +313,7 @@ Métrica de atenção × métrica de negócio <small>usado</small>
   <p>Giovani Machado Rigon · Matrícula 16/0070686 · Criação de Negócios (ADM0150) · Semestre 2026/2 · Universidade de Brasília</p>
   <p>As respostas das IAs aparecem apenas nos anexos, como objeto de estudo. Resposta de IA não é fonte.</p>
 </footer>
+<a class="topo-btn" href="#" aria-label="Voltar ao topo">↑</a>
+<script src="assets/movimento.js" defer></script>
 </body>
 </html>

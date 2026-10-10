@@ -40,6 +40,35 @@ PAGES = [
     ("anexo-d-sintese.html", "anexos/d-sintese.docx", "Anexo D", "Anexo D · Síntese da quarta IA", "annex"),
 ]
 
+# Faixa de abertura de cada página: (sobretítulo, título grande, subtítulo, ilustração)
+FAIXA = {
+    "index.html": ("Estudo de caso · ADM0150 · 2026/2", "Panificação no DF: oportunidades com uma cadeia de IAs",
+                   "Um prompt com a régua das Aulas 4, 5 e 6, três IAs, uma quarta IA que sintetiza e uma auditoria que confere tudo na fonte.",
+                   "forno"),
+    "prompt-mestre.html": ("2 · A receita", "O prompt-mestre", "O prompt na íntegra, bloco a bloco, com o instrumento de aula que cada parte carrega.", "receita"),
+    "protocolo.html": ("3 · O preparo", "Protocolo de teste", "As mesmas instruções em três IAs, as condições de uso e o prompt da quarta IA.", "tigelas"),
+    "auditoria-rastreabilidade.html": ("4.1 · Síntese auditada", "Rastreabilidade", "Cada afirmação da síntese rastreada até as respostas originais.", "lupa"),
+    "auditoria-verificacao.html": ("4.2 · Síntese auditada", "Verificação em fonte primária", "Sete afirmações confrontadas com IPEDF, Anvisa e literatura clínica.", "lupa"),
+    "auditoria-regua.html": ("4.3 · Síntese auditada", "Aplicação da régua", "As três finalistas no checklist de Dornelas e na pergunta do modelo de negócio.", "lupa"),
+    "conclusao.html": ("5 · O pão que sai do forno", "Conclusão", "A oportunidade que defendo e o que aprendi sobre encadear IAs.", "pao"),
+    "anexos.html": ("Anexos", "As quatro respostas, sem edição", "Gemini, DeepSeek, ChatGPT e a síntese do Claude, no site e em PDF.", "cesta"),
+}
+ANNEX_SUB = "Reproduzida na íntegra e sem edição, como objeto de estudo."
+
+CTA_INICIO = ('<p class="cta"><a class="btn btn-claro" href="prompt-mestre.html">Ver o prompt-mestre</a>'
+              '<a class="btn btn-contorno" href="conclusao.html">Ir para a conclusão</a></p>')
+
+MARQUEE_ITENS = ["Tendência × oportunidade", "Cinco perguntas de triagem", "Leitura crítica de dado",
+                 "Checklist de Dornelas", "3Ms", "Alto e baixo potencial", "Modelo de negócio",
+                 "Cinco modelos na web", "Atenção × negócio"]
+
+
+def marquee():
+    itens = "".join(f"<li>{i}</li>" for i in MARQUEE_ITENS)
+    return ('<div class="marquee" aria-label="Instrumentos das Aulas 4, 5 e 6 usados no prompt">'
+            f'<ul>{itens}</ul><ul aria-hidden="true">{itens}</ul></div>')
+
+
 ANNEX_NOTES = {
     "anexo-a-gemini.html": "Resposta do Gemini (origem A) ao prompt-mestre, reproduzida sem edição a partir do texto enviado à quarta IA.",
     "anexo-b-deepseek.html": "Resposta do DeepSeek (origem B) ao prompt-mestre, reproduzida sem edição a partir do texto enviado à quarta IA. Os marcadores [reference:N] fazem parte da resposta original.",
@@ -125,7 +154,18 @@ def build():
         if group == "annex":
             body = (f'<p class="nota-anexo">{ANNEX_NOTES[out]} '
                     f'<a href="anexos.html">Voltar à lista de anexos</a>.</p>' + body)
+        if group == "annex":
+            kicker, h1, sub, illu = "Anexos", title.split(" · ", 1)[1], ANNEX_SUB, "cesta"
+            kicker = title.split(" · ", 1)[0]
+        else:
+            kicker, h1, sub, illu = FAIXA[out]
         page = (TEMPLATE
+                .replace("{{KICKER}}", html.escape(kicker))
+                .replace("{{H1}}", html.escape(h1))
+                .replace("{{SUB}}", html.escape(sub))
+                .replace("{{ILLU}}", illu)
+                .replace("{{CTA}}", CTA_INICIO if out == "index.html" else "")
+                .replace("{{EXTRA}}", marquee() if out == "index.html" else "")
                 .replace("{{TITLE}}", html.escape(title))
                 .replace("{{NAV}}", nav_html(out))
                 .replace("{{BODY}}", body)

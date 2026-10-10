@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" role="img" aria-label="Forno assando pão">
+<style>
+.blob{fill:#fff;opacity:.08}
+.rise{transform-box:fill-box;transform-origin:50% 100%;animation:rise 4s ease-in-out infinite}
+@keyframes rise{0%,100%{transform:scaleY(.72) scaleX(.94)}55%{transform:scaleY(1) scaleX(1)}}
+.glow{animation:glow 4s ease-in-out infinite}
+@keyframes glow{0%,100%{opacity:.18}55%{opacity:.42}}
+.steam path{fill:none;stroke:#fff;stroke-width:6;stroke-linecap:round;opacity:0;animation:steam 3.2s ease-in-out infinite}
+.steam path:nth-child(2){animation-delay:1s}.steam path:nth-child(3){animation-delay:2s}
+@keyframes steam{0%{opacity:0;transform:translateY(14px)}30%{opacity:.7}100%{opacity:0;transform:translateY(-26px)}}
+.led{animation:led 1.6s ease-in-out infinite}
+@keyframes led{50%{opacity:.35}}
+.wheat{transform-box:fill-box;transform-origin:50% 100%;animation:sway 3.6s ease-in-out infinite}
+.wheat.w2{animation-delay:-1.4s}
+@keyframes sway{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+.flour circle{fill:#fff;opacity:0;animation:flour 5s linear infinite}
+.flour circle:nth-child(2){animation-delay:1.2s}.flour circle:nth-child(3){animation-delay:2.5s}.flour circle:nth-child(4){animation-delay:3.7s}
+@keyframes flour{0%{opacity:0;transform:translate(0,0)}20%{opacity:.8}100%{opacity:0;transform:translate(18px,-60px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<circle class="blob" cx="205" cy="172" r="142"/>
+<g class="steam"><path d="M170 96c-8-10 8-18 0-30"/><path d="M200 92c-8-10 8-18 0-30"/><path d="M230 96c-8-10 8-18 0-30"/></g>
+<rect x="92" y="112" width="220" height="172" rx="20" fill="#fff"/>
+<rect x="92" y="112" width="220" height="40" rx="20" fill="#e3ecf6"/>
+<rect x="92" y="136" width="220" height="16" fill="#e3ecf6"/>
+<circle cx="124" cy="132" r="8" fill="#133e79"/><circle cx="152" cy="132" r="8" fill="#133e79"/>
+<circle class="led" cx="282" cy="132" r="7" fill="#008940"/>
+<rect x="116" y="166" width="172" height="96" rx="14" fill="#0d2c57"/>
+<rect class="glow" x="116" y="166" width="172" height="96" rx="14" fill="#e9b85c"/>
+<rect x="132" y="246" width="140" height="6" rx="3" fill="#5c7aa6"/>
+<g class="rise"><path d="M146 247c0-42 112-42 112 0z" fill="#d79a4e"/><path d="M152 247c2-30 98-30 100 0" fill="#e7b46c"/>
+<path d="M172 226l12-10M196 222l12-10M220 226l12-10" stroke="#f6e7c8" stroke-width="5" stroke-linecap="round"/></g>
+<rect x="104" y="284" width="196" height="10" rx="5" fill="#0d2c57" opacity=".35"/>
+<g class="wheat"><path d="M52 290V170" stroke="#5fc28a" stroke-width="5" stroke-linecap="round"/>
+<g fill="#f6e7c8"><ellipse cx="44" cy="186" rx="7" ry="12" transform="rotate(-28 44 186)"/><ellipse cx="60" cy="186" rx="7" ry="12" transform="rotate(28 60 186)"/><ellipse cx="44" cy="210" rx="7" ry="12" transform="rotate(-28 44 210)"/><ellipse cx="60" cy="210" rx="7" ry="12" transform="rotate(28 60 210)"/><ellipse cx="44" cy="234" rx="7" ry="12" transform="rotate(-28 44 234)"/><ellipse cx="60" cy="234" rx="7" ry="12" transform="rotate(28 60 234)"/><ellipse cx="52" cy="164" rx="6" ry="12"/></g></g>
+<g class="wheat w2"><path d="M350 290V190" stroke="#5fc28a" stroke-width="5" stroke-linecap="round"/>
+<g fill="#f6e7c8"><ellipse cx="342" cy="206" rx="7" ry="12" transform="rotate(-28 342 206)"/><ellipse cx="358" cy="206" rx="7" ry="12" transform="rotate(28 358 206)"/><ellipse cx="342" cy="230" rx="7" ry="12" transform="rotate(-28 342 230)"/><ellipse cx="358" cy="230" rx="7" ry="12" transform="rotate(28 358 230)"/><ellipse cx="350" cy="184" rx="6" ry="12"/></g></g>
+<g class="flour"><circle cx="80" cy="260" r="4"/><circle cx="330" cy="270" r="3"/><circle cx="110" cy="100" r="3"/><circle cx="300" cy="96" r="4"/></g>
+</svg>

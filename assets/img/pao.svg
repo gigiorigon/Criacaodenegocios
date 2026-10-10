@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" role="img" aria-label="Pão sem glúten recém-assado">
+<style>
+.blob{fill:#fff;opacity:.08}
+.steam path{fill:none;stroke:#fff;stroke-width:6;stroke-linecap:round;opacity:0;animation:steam 3.2s ease-in-out infinite}
+.steam path:nth-child(2){animation-delay:1.1s}.steam path:nth-child(3){animation-delay:2.1s}
+@keyframes steam{0%{opacity:0;transform:translateY(14px)}30%{opacity:.75}100%{opacity:0;transform:translateY(-28px)}}
+.loaf{transform-box:fill-box;transform-origin:50% 100%;animation:breathe 4s ease-in-out infinite}
+@keyframes breathe{50%{transform:scale(1.03,1.05)}}
+.badge{transform-box:fill-box;transform-origin:50% 50%;animation:spin 14s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.sp{transform-box:fill-box;transform-origin:50% 50%;animation:tw 2.4s ease-in-out infinite}
+.s2{animation-delay:.8s}.s3{animation-delay:1.6s}
+@keyframes tw{0%,100%{opacity:.2;transform:scale(.6)}50%{opacity:1;transform:scale(1)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<circle class="blob" cx="200" cy="175" r="140"/>
+<g class="steam"><path d="M168 112c-8-10 8-18 0-30"/><path d="M200 106c-8-10 8-18 0-30"/><path d="M232 112c-8-10 8-18 0-30"/></g>
+<g class="loaf"><path d="M90 262c-6-80 226-80 220 0z" fill="#d79a4e"/><path d="M104 262c0-62 192-62 192 0" fill="#e7b46c"/>
+<path d="M140 222l26-30M178 214l26-30M216 214l26-30M254 222l20-24" stroke="#f6e7c8" stroke-width="8" stroke-linecap="round"/></g>
+<rect x="76" y="262" width="248" height="12" rx="6" fill="#0d2c57" opacity=".35"/>
+<g transform="translate(316 92)"><circle r="44" fill="#008940"/>
+<g class="badge"><path id="c" d="M0 -32a32 32 0 1 1 -0.1 0" fill="none"/><text font-family="system-ui,Segoe UI,Roboto,Arial,sans-serif" font-weight="800" font-size="11" fill="#fff"><textPath href="#c" textLength="196" lengthAdjust="spacing">SEM GLÚTEN · SEM GLÚTEN · </textPath></text></g>
+<path d="M-12 0l8 8 16-17" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g fill="#fff"><path class="sp" d="M70 120l5 12 12 5-12 5-5 12-5-12-12-5 12-5z"/><path class="sp s2" d="M110 70l4 9 9 4-9 4-4 9-4-9-9-4 9-4z"/><path class="sp s3" d="M330 210l4 9 9 4-9 4-4 9-4-9-9-4 9-4z"/></g>
+</svg>

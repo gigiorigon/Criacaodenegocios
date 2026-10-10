@@ -9,7 +9,9 @@
 <link rel="stylesheet" href="assets/estilo.css">
 </head>
 <body class="{{BODYCLASS}}">
+<script>document.documentElement.classList.add("js")</script>
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<div class="progresso" aria-hidden="true"><span></span></div>
 <header class="topo">
   <div class="topo-in">
     <a class="marca" href="index.html">
@@ -27,9 +29,22 @@
   </details>
   <nav class="menu-largo" aria-label="Seções do site">{{NAV}}</nav>
 </header>
+<section class="faixa faixa-{{BODYCLASS}}">
+  <span class="bolha b1" aria-hidden="true"></span><span class="bolha b2" aria-hidden="true"></span><span class="bolha b3" aria-hidden="true"></span>
+  <div class="faixa-in">
+    <div class="faixa-txt">
+      <p class="kicker">{{KICKER}}</p>
+      <h1>{{H1}}</h1>
+      <p class="faixa-sub">{{SUB}}</p>
+      {{CTA}}
+    </div>
+    <div class="faixa-img"><img src="assets/img/{{ILLU}}.svg" alt="" width="400" height="320"></div>
+  </div>
+  <svg class="onda" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path class="onda-v" d="M-80 40c260 40 500 40 800 0s500-40 800 0v40H-80z"/><path class="onda-f" d="M0 56c240-32 480-32 720 0s480 32 720 0v24H0z"/></svg>
+</section>
+{{EXTRA}}
 <main id="conteudo">
 <article class="conteudo">
-<h1>{{TITLE}}</h1>
 {{BODY}}
 </article>
 {{PAGER}}
@@ -38,5 +53,7 @@
   <p>{{NOME}} · Matrícula {{MATRICULA}} · {{DISCIPLINA}} · Semestre {{SEMESTRE}} · Universidade de Brasília</p>
   <p>As respostas das IAs aparecem apenas nos anexos, como objeto de estudo. Resposta de IA não é fonte.</p>
 </footer>
+<a class="topo-btn" href="#" aria-label="Voltar ao topo">↑</a>
+<script src="assets/movimento.js" defer></script>
 </body>
 </html>

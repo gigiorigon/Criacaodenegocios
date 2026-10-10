@@ -13,14 +13,46 @@ Este estudo testa um método de detecção de oportunidades de negócio em que q
 
 O recorte é o mercado de **panificação (padarias) no Distrito Federal**, em regiões administrativas no entorno do Plano Piloto com custo de operação menor, para um negócio de pequeno ou médio porte, com capital de até **R\$ 500 mil** e abertura entre **2026 e 2030**.
 
-O caminho seguido tem quatro passos:
+O caminho seguido tem quatro passos, como uma receita:
 
-1. **Prompt-mestre.** Escrevi um único prompt que carrega os instrumentos de avaliação de oportunidade das Aulas 4, 5 e 6 ([página 2](prompt-mestre.html)).
-2. **Três IAs.** Enviei o mesmo prompt, sem adaptação, ao Gemini, ao DeepSeek e ao ChatGPT ([página 3](protocolo.html)).
-3. **Quarta IA.** Submeti as três respostas a uma quarta IA, encarregada apenas de sintetizá-las, com um prompt de síntese próprio ([página 3](protocolo.html#prompt-de-síntese)).
-4. **Auditoria.** Tratei a síntese como objeto de investigação: rastreei suas afirmações até as respostas originais, confrontei dados com fontes primárias e apliquei a régua por conta própria ([páginas 4.1 a 4.3](auditoria-rastreabilidade.html)).
+```{=html}
+<div class="passos">
+<a class="passo" href="prompt-mestre.html"><span class="passo-img"><img src="assets/img/receita.svg" alt="" loading="lazy"></span><span class="passo-n">1</span><strong>Prompt-mestre</strong><span>Um único prompt que carrega os instrumentos de avaliação de oportunidade das Aulas 4, 5 e 6.</span></a>
+<a class="passo" href="protocolo.html"><span class="passo-img"><img src="assets/img/tigelas.svg" alt="" loading="lazy"></span><span class="passo-n">2</span><strong>Três IAs</strong><span>O mesmo prompt, sem adaptação, no Gemini (A), no DeepSeek (B) e no ChatGPT (C).</span></a>
+<a class="passo" href="protocolo.html#prompt-de-síntese"><span class="passo-img"><img src="assets/img/forno.svg" alt="" loading="lazy"></span><span class="passo-n">3</span><strong>Quarta IA</strong><span>O Claude (D) sintetiza as três respostas, com um prompt de síntese próprio.</span></a>
+<a class="passo" href="auditoria-rastreabilidade.html"><span class="passo-img"><img src="assets/img/lupa.svg" alt="" loading="lazy"></span><span class="passo-n">4</span><strong>Auditoria</strong><span>Rastreio a síntese até as respostas, confronto dados com fontes primárias e aplico a régua por conta própria.</span></a>
+</div>
+```
 
 ## Resultado em uma frase
+
+::: {.numeros}
+::: {.info}
+16
+
+afirmações da síntese auditadas
+:::
+::: {.warn}
+4
+
+distorcidas em certeza ou sentido
+:::
+::: {.bad}
+2
+
+órfãs, sem origem nas três IAs
+:::
+::: {.info}
+3
+
+ressalvas suprimidas
+:::
+::: {.ok}
+1 de 7
+
+dados confirmados por inteiro na fonte primária
+:::
+:::
 
 ::: {.caixa .destaque}
 A síntese manteve os números, mas perdeu as dúvidas: das 16 afirmações auditadas, 4 foram distorcidas em certeza ou sentido, 2 são órfãs e 3 ressalvas das próprias IAs sumiram. Na fonte primária, só 1 de 7 afirmações se confirmou por inteiro, e os dados por RA das três IAs têm edição, ano ou RA trocados. Pela régua das Aulas 5 e 6, nenhuma oportunidade passa nas cinco perguntas hoje; a única que eu defenderia é a panificação sem glúten dedicada, vendida primeiro a cafeterias e restaurantes.

@@ -9,7 +9,9 @@
 <link rel="stylesheet" href="assets/estilo.css">
 </head>
 <body class="audit">
+<script>document.documentElement.classList.add("js")</script>
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<div class="progresso" aria-hidden="true"><span></span></div>
 <header class="topo">
   <div class="topo-in">
     <a class="marca" href="index.html">
@@ -27,9 +29,22 @@
   </details>
   <nav class="menu-largo" aria-label="Seções do site"><ul><li><a href="index.html">Abertura</a></li><li><a href="prompt-mestre.html">Prompt-mestre</a></li><li><a href="protocolo.html">Protocolo</a></li><li class="grupo ativo"><span>Síntese auditada</span><ul><li><a href="auditoria-rastreabilidade.html">Rastreabilidade</a></li><li><a href="auditoria-verificacao.html">Fontes primárias</a></li><li><a href="auditoria-regua.html" class="ativo" aria-current="page">Aplicação da régua</a></li></ul></li><li><a href="conclusao.html">Conclusão</a></li><li><a href="anexos.html">Anexos</a></li></ul></nav>
 </header>
+<section class="faixa faixa-audit">
+  <span class="bolha b1" aria-hidden="true"></span><span class="bolha b2" aria-hidden="true"></span><span class="bolha b3" aria-hidden="true"></span>
+  <div class="faixa-in">
+    <div class="faixa-txt">
+      <p class="kicker">4.3 · Síntese auditada</p>
+      <h1>Aplicação da régua</h1>
+      <p class="faixa-sub">As três finalistas no checklist de Dornelas e na pergunta do modelo de negócio.</p>
+      
+    </div>
+    <div class="faixa-img"><img src="assets/img/lupa.svg" alt="" width="400" height="320"></div>
+  </div>
+  <svg class="onda" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path class="onda-v" d="M-80 40c260 40 500 40 800 0s500-40 800 0v40H-80z"/><path class="onda-f" d="M0 56c240-32 480-32 720 0s480 32 720 0v24H0z"/></svg>
+</section>
+
 <main id="conteudo">
 <article class="conteudo">
-<h1>Síntese auditada · 4.3 Aplicação da régua</h1>
 <p class="lede">
 Nenhuma das três passa nas cinco perguntas com a evidência disponível hoje. A única que eu defenderia é a panificação sem glúten dedicada, com outro modelo de negócio: vender primeiro a cafeterias e restaurantes, e não só a famílias. A central para cafeterias depende de uma dor não comprovada e tem diferencial copiável; a de condomínios já tem dona no lugar proposto.
 </p>
@@ -166,5 +181,7 @@ Nenhuma das três passa nas cinco perguntas com a evidência disponível hoje. A
   <p>Giovani Machado Rigon · Matrícula 16/0070686 · Criação de Negócios (ADM0150) · Semestre 2026/2 · Universidade de Brasília</p>
   <p>As respostas das IAs aparecem apenas nos anexos, como objeto de estudo. Resposta de IA não é fonte.</p>
 </footer>
+<a class="topo-btn" href="#" aria-label="Voltar ao topo">↑</a>
+<script src="assets/movimento.js" defer></script>
 </body>
 </html>

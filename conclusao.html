@@ -9,7 +9,9 @@
 <link rel="stylesheet" href="assets/estilo.css">
 </head>
 <body class="main">
+<script>document.documentElement.classList.add("js")</script>
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<div class="progresso" aria-hidden="true"><span></span></div>
 <header class="topo">
   <div class="topo-in">
     <a class="marca" href="index.html">
@@ -27,9 +29,22 @@
   </details>
   <nav class="menu-largo" aria-label="Seções do site"><ul><li><a href="index.html">Abertura</a></li><li><a href="prompt-mestre.html">Prompt-mestre</a></li><li><a href="protocolo.html">Protocolo</a></li><li class="grupo"><span>Síntese auditada</span><ul><li><a href="auditoria-rastreabilidade.html">Rastreabilidade</a></li><li><a href="auditoria-verificacao.html">Fontes primárias</a></li><li><a href="auditoria-regua.html">Aplicação da régua</a></li></ul></li><li><a href="conclusao.html" class="ativo" aria-current="page">Conclusão</a></li><li><a href="anexos.html">Anexos</a></li></ul></nav>
 </header>
+<section class="faixa faixa-main">
+  <span class="bolha b1" aria-hidden="true"></span><span class="bolha b2" aria-hidden="true"></span><span class="bolha b3" aria-hidden="true"></span>
+  <div class="faixa-in">
+    <div class="faixa-txt">
+      <p class="kicker">5 · O pão que sai do forno</p>
+      <h1>Conclusão</h1>
+      <p class="faixa-sub">A oportunidade que defendo e o que aprendi sobre encadear IAs.</p>
+      
+    </div>
+    <div class="faixa-img"><img src="assets/img/pao.svg" alt="" width="400" height="320"></div>
+  </div>
+  <svg class="onda" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path class="onda-v" d="M-80 40c260 40 500 40 800 0s500-40 800 0v40H-80z"/><path class="onda-f" d="M0 56c240-32 480-32 720 0s480 32 720 0v24H0z"/></svg>
+</section>
+
 <main id="conteudo">
 <article class="conteudo">
-<h1>Conclusão</h1>
 <h2 id="a-oportunidade-que-defendo">A oportunidade que defendo</h2>
 <div class="caixa destaque">
 <p><strong>Panificação sem glúten dedicada, vendida primeiro a cafeterias, restaurantes e hotéis (B2B) e, em segundo lugar, a famílias com celíaco.</strong></p>
@@ -112,5 +127,7 @@
   <p>Giovani Machado Rigon · Matrícula 16/0070686 · Criação de Negócios (ADM0150) · Semestre 2026/2 · Universidade de Brasília</p>
   <p>As respostas das IAs aparecem apenas nos anexos, como objeto de estudo. Resposta de IA não é fonte.</p>
 </footer>
+<a class="topo-btn" href="#" aria-label="Voltar ao topo">↑</a>
+<script src="assets/movimento.js" defer></script>
 </body>
 </html>
