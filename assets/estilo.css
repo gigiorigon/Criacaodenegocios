@@ -5,21 +5,21 @@
   --text: #17212e;
   --muted: #5a6577;
   --line: #d6dee8;
-  --accent: #003366;
-  --link: #0a4a8a;
-  --green: #006633;
+  --accent: #133e79;
+  --link: #1a4f96;
+  --green: #008940;
   --accent-soft: #e3ecf6;
   --green-soft: #e2f1e8;
-  --head-bg: #003366;
+  --head-bg: #133e79;
   --head-text: #ffffff;
   --head-muted: #c5d4e6;
-  --ok: #006633;
+  --ok: #00753a;
   --ok-bg: #e2f1e8;
   --warn: #8a5a00;
   --warn-bg: #fbefd2;
   --bad: #9b2c2c;
   --bad-bg: #f8e1df;
-  --info: #003366;
+  --info: #133e79;
   --info-bg: #e3ecf6;
   --mark: #ffe58a;
   --code-bg: #eef2f7;
@@ -113,8 +113,8 @@ a:hover { text-decoration-thickness: 2px; }
 .marca-s { color: var(--head-muted); font-size: .85rem; }
 .id-aluno { margin: 0; color: var(--head-muted); font-size: .85rem; text-align: right; line-height: 1.4; }
 .topo-dir { display: flex; align-items: center; gap: 1rem; margin-left: auto; }
-.logo-unb { display: block; height: 52px; width: auto; background: #fff; padding: 6px 10px; border-radius: 6px; }
-@media (max-width: 600px) { .logo-unb { height: 40px; } .topo-in { flex-wrap: nowrap; align-items: center; } .topo-dir .id-aluno { display: none; } }
+.logo-unb { display: block; height: 68px; width: auto; background: #fff; padding: 6px 10px; border-radius: 6px; }
+@media (max-width: 600px) { .logo-unb { height: 50px; } .topo-in { flex-wrap: nowrap; align-items: center; } .topo-dir .id-aluno { display: none; } }
 
 .menu-largo ul, .menu ul { list-style: none; margin: 0; padding: 0; }
 .menu-largo { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
@@ -241,7 +241,7 @@ details.instr[open] summary { border-bottom: 1px solid var(--line); margin-botto
 .bloco-just > :first-child { margin-top: 0; }
 .bloco-just h3 { margin-top: 0; font-size: 1.05rem; }
 .bloco-just p, .bloco-just ul { max-width: none; }
-.bloco-just .tag { display: inline-block; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--green); margin-bottom: .2rem; }
+.bloco-just .tag { display: inline-block; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--ok); margin-bottom: .2rem; }
 @media (max-width: 900px) {
   .bloco { grid-template-columns: 1fr; }
   .bloco-prompt { border-right: 0; border-bottom: 1px solid var(--line); }
