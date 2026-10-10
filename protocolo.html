@@ -31,7 +31,8 @@
 <article class="conteudo">
 <h1>Protocolo de teste</h1>
 <h2 id="ferramentas-e-condições-de-uso">Ferramentas e condições de uso</h2>
-<p>O mesmo prompt-mestre foi aplicado em três IAs generativas. As três respostas foram depois enviadas, juntas, a uma quarta IA, diferente das anteriores, encarregada apenas de sintetizá-las. Nas tabelas de auditoria, as origens aparecem como <strong>A = Gemini</strong>, <strong>B = DeepSeek</strong> e <strong>C = ChatGPT</strong>.</p>
+<p>O mesmo prompt-mestre foi aplicado em três IAs generativas. As três respostas foram depois enviadas, juntas, a uma quarta IA, diferente das anteriores, encarregada apenas de sintetizá-las. A quarta IA foi o <strong>Claude</strong>, que não participou da geração das respostas. Nas tabelas de auditoria, as origens aparecem como <strong>A = Gemini</strong>, <strong>B = DeepSeek</strong> e <strong>C = ChatGPT</strong>, na ordem em que as respostas foram coladas no prompt de síntese, e não na ordem cronológica dos testes.</p>
+<p>A tabela está em ordem cronológica. Os horários são aproximados, com precisão de hora. Para o DeepSeek, o ChatGPT e o Gemini, registrei o plano usado; a versão exata do modelo não foi registrada.</p>
 <div class="tabela larga">
 <div class="tabela"><table style="width:100%;">
 <colgroup>
@@ -46,44 +47,44 @@
 <tr class="header">
 <th></th>
 <th>Ferramenta</th>
-<th>Versão do modelo</th>
+<th>Versão ou plano</th>
 <th>Data e hora do teste</th>
 <th>Busca na web</th>
-<th>Plano</th>
+<th>Ordem</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>A</td>
-<td>Gemini</td>
-<td><mark class="pendente">[PREENCHER: versão]</mark></td>
-<td><mark class="pendente">[PREENCHER: data e hora]</mark></td>
-<td><mark class="pendente">[PREENCHER: ativada ou não]</mark></td>
-<td><mark class="pendente">[PREENCHER: gratuito ou pago]</mark></td>
-</tr>
-<tr class="even">
 <td>B</td>
 <td>DeepSeek</td>
-<td><mark class="pendente">[PREENCHER: versão]</mark></td>
-<td><mark class="pendente">[PREENCHER: data e hora]</mark></td>
-<td><mark class="pendente">[PREENCHER: ativada ou não]</mark></td>
-<td><mark class="pendente">[PREENCHER: gratuito ou pago]</mark></td>
+<td>Gratuita (free)</td>
+<td>08/10/2026, 22h</td>
+<td>Ativada</td>
+<td>1º</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>C</td>
 <td>ChatGPT</td>
-<td><mark class="pendente">[PREENCHER: versão]</mark></td>
-<td><mark class="pendente">[PREENCHER: data e hora]</mark></td>
-<td><mark class="pendente">[PREENCHER: ativada ou não]</mark></td>
-<td><mark class="pendente">[PREENCHER: gratuito ou pago]</mark></td>
+<td>Gratuita (free)</td>
+<td>09/10/2026, 16h</td>
+<td>Ativada</td>
+<td>2º</td>
+</tr>
+<tr class="odd">
+<td>A</td>
+<td>Gemini</td>
+<td>Plus</td>
+<td>09/10/2026, 22h</td>
+<td>Ativada</td>
+<td>3º</td>
 </tr>
 <tr class="even">
 <td>4ª</td>
-<td><mark class="pendente">[PREENCHER: nome da quarta IA]</mark></td>
-<td><mark class="pendente">[PREENCHER: versão]</mark></td>
-<td><mark class="pendente">[PREENCHER: data e hora]</mark></td>
-<td><mark class="pendente">[PREENCHER: ativada ou não]</mark></td>
-<td><mark class="pendente">[PREENCHER: gratuito ou pago]</mark></td>
+<td>Claude</td>
+<td>Opus 5.5</td>
+<td>10/10/2026, 1h</td>
+<td>Ativada</td>
+<td>Síntese, depois das três</td>
 </tr>
 </tbody>
 </table></div>
@@ -93,7 +94,8 @@
 <li><strong>Mesmo prompt, sem adaptação.</strong> O texto da <a href="prompt-mestre.html">página 2</a> foi colado igual nas três ferramentas, sem ajuste para nenhuma delas.</li>
 <li><strong>Primeira resposta.</strong> Foi registrada a primeira resposta de cada IA, sem refinamento em conversa nem pedido de complemento.</li>
 <li><strong>Resposta na íntegra.</strong> As três respostas foram copiadas inteiras para dentro do prompt de síntese e estão nos <a href="anexos.html">anexos A, B e C</a>, sem edição.</li>
-<li><strong>Conversa nova.</strong> <mark class="pendente">[PREENCHER: confirmar se cada teste foi feito em conversa nova, sem histórico nem instruções personalizadas]</mark></li>
+<li><strong>Conversa nova.</strong> Cada teste, inclusive o da quarta IA, foi feito numa conversa nova, sem histórico anterior.</li>
+<li><strong>Busca na web ativada nas quatro ferramentas.</strong> Como o horizonte é 2026–2030 e os modelos têm data de corte, deixei a busca ligada em todas, para que nenhuma ficasse em desvantagem de informação.</li>
 </ul>
 <h3 id="o-que-cada-ia-declarou-sobre-si">O que cada IA declarou sobre si</h3>
 <p>O passo 5 do processo de pensamento crítico pedia que cada IA informasse sua data de corte de conhecimento e se consultou a internet. As declarações abaixo são da própria resposta, e não verificação minha.</p>
@@ -135,7 +137,8 @@
 </tbody>
 </table></div>
 </div>
-<p>Esse campo ajuda a ler a divergência entre as respostas. A, que declarou não ter feito busca, aprovou duas oportunidades; B e C, que declararam ter pesquisado, chegaram a resultados opostos: B aprovou três e C, nenhuma. A busca na web não garantiu dado correto: na <a href="auditoria-verificacao.html">verificação em fonte primária</a>, os dados por RA de B e de C também têm edição, ano ou RA trocados.</p>
+<p>Esse campo ajuda a ler a divergência entre as respostas, e traz um achado. <strong>A busca estava ativada nas três ferramentas, mas o Gemini declarou que “não foi realizada busca ao vivo na internet para esta resposta”.</strong> Ou a ferramenta não usou a busca disponível, ou a declaração não corresponde ao que ela fez; pelo que aparece na resposta, não há como saber qual das duas. De todo modo, a autodeclaração de uma IA sobre o próprio processo não é evidência.</p>
+<p>Com a busca disponível para as três, os resultados foram opostos: A aprovou duas oportunidades, B aprovou três e C, nenhuma. A busca também não garantiu dado correto: na <a href="auditoria-verificacao.html">verificação em fonte primária</a>, os dados por RA de B e de C têm edição, ano ou RA trocados, e A trocou o ano de um dado setorial.</p>
 <h3 id="observação-sobre-a-resposta-c">Observação sobre a resposta C</h3>
 <p>O texto do ChatGPT contém a linha “Pensou por 12s”, resíduo da interface que veio junto com o texto copiado. Ela foi mantida no anexo, porque a regra é não editar as respostas, e foi registrada pela própria síntese na seção de conformidade.</p>
 <h2 id="prompt-de-síntese">Prompt de síntese</h2>

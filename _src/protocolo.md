@@ -1,14 +1,16 @@
 ## Ferramentas e condições de uso
 
-O mesmo prompt-mestre foi aplicado em três IAs generativas. As três respostas foram depois enviadas, juntas, a uma quarta IA, diferente das anteriores, encarregada apenas de sintetizá-las. Nas tabelas de auditoria, as origens aparecem como **A = Gemini**, **B = DeepSeek** e **C = ChatGPT**.
+O mesmo prompt-mestre foi aplicado em três IAs generativas. As três respostas foram depois enviadas, juntas, a uma quarta IA, diferente das anteriores, encarregada apenas de sintetizá-las. A quarta IA foi o **Claude**, que não participou da geração das respostas. Nas tabelas de auditoria, as origens aparecem como **A = Gemini**, **B = DeepSeek** e **C = ChatGPT**, na ordem em que as respostas foram coladas no prompt de síntese, e não na ordem cronológica dos testes.
+
+A tabela está em ordem cronológica. Os horários são aproximados, com precisão de hora. Para o DeepSeek, o ChatGPT e o Gemini, registrei o plano usado; a versão exata do modelo não foi registrada.
 
 ::: {.tabela .larga}
-| | Ferramenta | Versão do modelo | Data e hora do teste | Busca na web | Plano |
+| | Ferramenta | Versão ou plano | Data e hora do teste | Busca na web | Ordem |
 |---|---|---|---|---|---|
-| A | Gemini | [PREENCHER: versão] | [PREENCHER: data e hora] | [PREENCHER: ativada ou não] | [PREENCHER: gratuito ou pago] |
-| B | DeepSeek | [PREENCHER: versão] | [PREENCHER: data e hora] | [PREENCHER: ativada ou não] | [PREENCHER: gratuito ou pago] |
-| C | ChatGPT | [PREENCHER: versão] | [PREENCHER: data e hora] | [PREENCHER: ativada ou não] | [PREENCHER: gratuito ou pago] |
-| 4ª | [PREENCHER: nome da quarta IA] | [PREENCHER: versão] | [PREENCHER: data e hora] | [PREENCHER: ativada ou não] | [PREENCHER: gratuito ou pago] |
+| B | DeepSeek | Gratuita (free) | 08/10/2026, 22h | Ativada | 1º |
+| C | ChatGPT | Gratuita (free) | 09/10/2026, 16h | Ativada | 2º |
+| A | Gemini | Plus | 09/10/2026, 22h | Ativada | 3º |
+| 4ª | Claude | Opus 5.5 | 10/10/2026, 1h | Ativada | Síntese, depois das três |
 :::
 
 ### Condições aplicadas às três IAs
@@ -16,7 +18,8 @@ O mesmo prompt-mestre foi aplicado em três IAs generativas. As três respostas 
 - **Mesmo prompt, sem adaptação.** O texto da [página 2](prompt-mestre.html) foi colado igual nas três ferramentas, sem ajuste para nenhuma delas.
 - **Primeira resposta.** Foi registrada a primeira resposta de cada IA, sem refinamento em conversa nem pedido de complemento.
 - **Resposta na íntegra.** As três respostas foram copiadas inteiras para dentro do prompt de síntese e estão nos [anexos A, B e C](anexos.html), sem edição.
-- **Conversa nova.** [PREENCHER: confirmar se cada teste foi feito em conversa nova, sem histórico nem instruções personalizadas]
+- **Conversa nova.** Cada teste, inclusive o da quarta IA, foi feito numa conversa nova, sem histórico anterior.
+- **Busca na web ativada nas quatro ferramentas.** Como o horizonte é 2026–2030 e os modelos têm data de corte, deixei a busca ligada em todas, para que nenhuma ficasse em desvantagem de informação.
 
 ### O que cada IA declarou sobre si
 
@@ -30,7 +33,9 @@ O passo 5 do processo de pensamento crítico pedia que cada IA informasse sua da
 | C · ChatGPT | "9 de outubro de 2026" | "Pesquisa na internet realizada" em 9 de outubro de 2026 | Linha de abertura e seção "Data de corte e fontes" (C não usou a tag `<analise_previa>`) |
 :::
 
-Esse campo ajuda a ler a divergência entre as respostas. A, que declarou não ter feito busca, aprovou duas oportunidades; B e C, que declararam ter pesquisado, chegaram a resultados opostos: B aprovou três e C, nenhuma. A busca na web não garantiu dado correto: na [verificação em fonte primária](auditoria-verificacao.html), os dados por RA de B e de C também têm edição, ano ou RA trocados.
+Esse campo ajuda a ler a divergência entre as respostas, e traz um achado. **A busca estava ativada nas três ferramentas, mas o Gemini declarou que "não foi realizada busca ao vivo na internet para esta resposta".** Ou a ferramenta não usou a busca disponível, ou a declaração não corresponde ao que ela fez; pelo que aparece na resposta, não há como saber qual das duas. De todo modo, a autodeclaração de uma IA sobre o próprio processo não é evidência.
+
+Com a busca disponível para as três, os resultados foram opostos: A aprovou duas oportunidades, B aprovou três e C, nenhuma. A busca também não garantiu dado correto: na [verificação em fonte primária](auditoria-verificacao.html), os dados por RA de B e de C têm edição, ano ou RA trocados, e A trocou o ano de um dado setorial.
 
 ### Observação sobre a resposta C
 

@@ -282,3 +282,4 @@ pre.anexo-bruto { background: var(--surface); border: 1px solid var(--line); bor
 
 /* Cartões curtos não usam justificado */
 .conteudo .ident p, .conteudo .numeros p, .conteudo .lista-anexos li, .conteudo .pager a { text-align: left; hyphens: manual; }
+.tabela .tabela { margin: 0; border: 0; border-radius: 0; overflow: visible; }
